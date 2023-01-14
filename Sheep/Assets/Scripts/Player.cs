@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
 
     public Move move;
     public VRLocomotion vrLoco;
-    public Teleportation teleportation;
 
     public Hand leftHand;
     public Hand rightHand;
@@ -56,7 +55,6 @@ public class Player : MonoBehaviour
         SetCameraRotationMode(GameSettings.Instance.CamRotationMode);
         SetCameraMovementMode(GameSettings.Instance.CamMovementMode);
         SetInstantCameraAnimations(GameSettings.Instance.instantCameraAnimations.Value);
-        SetTeleportationEnabled(GameSettings.Instance.locomotionMode.Value == (int)LocomotionMode.TELEPORTATION);
 
         return Instance;
     }
@@ -95,11 +93,6 @@ public class Player : MonoBehaviour
     public void SetCameraMovementMode(CameraMovementMode movementMode)
     {
         move.SetMovementMode(movementMode);
-    }
-
-    public void SetTeleportationEnabled(bool teleportationEnabled)
-    {
-        teleportation.ShouldTeleport = teleportationEnabled;
     }
 
     public void SetInstantCameraAnimations(bool instantAnimations)

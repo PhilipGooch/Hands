@@ -218,7 +218,6 @@ public class SettingsScreen : MenuScreen
         switch (locomotionMode)
         {
             case LocomotionMode.ROOM_SCALE:
-                player.SetTeleportationEnabled(false);
                 player.SetControllerMovementEnabled(false);
                 player.SetControllerRotationEnabled(false);
                 cameraMovementSwitch?.SetInteractable(false);
@@ -226,7 +225,6 @@ public class SettingsScreen : MenuScreen
                 cameraAnimations?.SetInteractable(false);
                 break;
             case LocomotionMode.JOYSTICK:
-                player.SetTeleportationEnabled(false);
                 player.SetControllerMovementEnabled(true);
                 player.SetControllerRotationEnabled(true);
                 cameraMovementSwitch?.SetInteractable(true);
@@ -234,7 +232,6 @@ public class SettingsScreen : MenuScreen
                 cameraAnimations?.SetInteractable(true);
                 break;
             case LocomotionMode.TELEPORTATION:
-                player.SetTeleportationEnabled(true);
                 player.SetControllerMovementEnabled(false);
                 player.SetControllerRotationEnabled(true);
                 cameraMovementSwitch?.SetInteractable(false);
