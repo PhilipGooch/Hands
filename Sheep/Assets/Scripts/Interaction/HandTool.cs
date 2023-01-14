@@ -2,6 +2,8 @@
 using System;
 using UnityEngine;
 
+
+
 //Hand tool is an object that can be activated with a hand trigger once grabbed
 public class HandTool : MonoBehaviour, ITriggerHandler, IGrabNotifications
 {

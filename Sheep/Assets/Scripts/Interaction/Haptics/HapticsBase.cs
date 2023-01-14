@@ -6,16 +6,16 @@ public class HapticsBase : MonoBehaviour, IGrabNotifications
     [SerializeField]
     private SimpleHaptics haptics;
     [Tooltip("Optional, only add if you want to forward grab events from some other object")]
-    [SerializeField]
-    private GrabEventsSender eventsSender;
+    //[SerializeField]
+    //private GrabEventsSender eventsSender;
 
     protected virtual void Start()
     {
-        if (eventsSender != null)
-        {
-            eventsSender.onGrab += OnGrab;
-            eventsSender.onRelease += OnRelease;
-        }
+        //if (eventsSender != null)
+        //{
+        //    eventsSender.onGrab += OnGrab;
+        //    eventsSender.onRelease += OnRelease;
+        //}
     }
 
     public void TryVibrate()
@@ -38,10 +38,10 @@ public class HapticsBase : MonoBehaviour, IGrabNotifications
 
     private void OnDestroy()
     {
-        if (eventsSender != null)
-        {
-            eventsSender.onGrab -= OnGrab;
-            eventsSender.onRelease -= OnRelease;
-        }
+        //if (eventsSender != null)
+        //{
+        //    eventsSender.onGrab -= OnGrab;
+        //    eventsSender.onRelease -= OnRelease;
+        //}
     }
 }

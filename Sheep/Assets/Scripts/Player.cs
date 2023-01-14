@@ -24,10 +24,10 @@ public class Player : MonoBehaviour
 
     Vector3 levelStartPosition;
 
-    public UnderwaterParameters UnderwaterParameters
-    {
-        get; private set;
-    }
+    //public UnderwaterParameters UnderwaterParameters
+    //{
+    //    get; private set;
+    //}
 
     public static bool Initialized
     {
@@ -134,15 +134,15 @@ public class Player : MonoBehaviour
         rightPos = cameraPos + offset;
     }
 
-    public void UpdateEyeUnderwaterState(bool leftUnderwater, bool rightUnderwater, UnderwaterParameters underwaterParameters)
-    {
-        if (leftUnderwater)
-            LeftEyeUnderwater = true;
-        if (rightUnderwater)
-            RightEyeUnderwater = true;
-        if (leftUnderwater || rightUnderwater)
-            UnderwaterParameters = underwaterParameters;
-    }
+    //public void UpdateEyeUnderwaterState(bool leftUnderwater, bool rightUnderwater, UnderwaterParameters underwaterParameters)
+    //{
+    //    if (leftUnderwater)
+    //        LeftEyeUnderwater = true;
+    //    if (rightUnderwater)
+    //        RightEyeUnderwater = true;
+    //    if (leftUnderwater || rightUnderwater)
+    //        UnderwaterParameters = underwaterParameters;
+    //}
 
     public void ReadjustPlayerInstancePosition()
     {

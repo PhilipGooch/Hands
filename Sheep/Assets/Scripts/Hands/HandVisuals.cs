@@ -7,7 +7,7 @@ using VR.System;
 public class HandVisuals : MonoBehaviour
 {
     HandDirection handDirection;
-    OutlineRenderer nearbyObjectOutlines;
+    //OutlineRenderer nearbyObjectOutlines;
 
     float recoverPhase = 0f;
     Vector3 recoverFromPosition;
@@ -17,7 +17,7 @@ public class HandVisuals : MonoBehaviour
 
     private void Awake()
     {
-        nearbyObjectOutlines = new OutlineRenderer();
+        //nearbyObjectOutlines = new OutlineRenderer();
         handDirection = GetComponent<Hand>().handDirection;
     }
 
@@ -63,26 +63,26 @@ public class HandVisuals : MonoBehaviour
 
     public void UpdateOutline(Collider nearestCollider, Rigidbody attachedBody, bool isThreat)
     {
-        nearbyObjectOutlines.HideOutlines();
-
-        if (attachedBody != null)
-        {
-            var grabParams = attachedBody.GetComponent<GrabParamsBinding>();
-            if (grabParams != null)
-            {
-                nearbyObjectOutlines.ShowOutlines(grabParams);
-            }
-        }
-        else
-        {
-            if (nearestCollider != null && !isThreat)
-            {
-                var grabParams = nearestCollider.GetComponentInParent<GrabParamsBinding>();
-                if (grabParams != null && grabParams.Grabbable)
-                {
-                    nearbyObjectOutlines.ShowOutlines(grabParams);
-                }
-            }
-        }
+        //nearbyObjectOutlines.HideOutlines();
+        //
+        //if (attachedBody != null)
+        //{
+        //    var grabParams = attachedBody.GetComponent<GrabParamsBinding>();
+        //    if (grabParams != null)
+        //    {
+        //        nearbyObjectOutlines.ShowOutlines(grabParams);
+        //    }
+        //}
+        //else
+        //{
+        //    if (nearestCollider != null && !isThreat)
+        //    {
+        //        var grabParams = nearestCollider.GetComponentInParent<GrabParamsBinding>();
+        //        if (grabParams != null && grabParams.Grabbable)
+        //        {
+        //            nearbyObjectOutlines.ShowOutlines(grabParams);
+        //        }
+        //    }
+        //}
     }
 }

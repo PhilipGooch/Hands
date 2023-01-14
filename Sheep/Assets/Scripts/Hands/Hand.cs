@@ -5,6 +5,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using VR.System;
 
+// from old plug...
+public interface IConstraint
+{
+    void Apply(ref Vector3 targetPos, ref Quaternion targetRot, ref Vector6 targetVel);
+}
+
 public class Hand : MonoBehaviour
 {
     [SerializeField]
@@ -762,46 +768,46 @@ public class Hand : MonoBehaviour
         float velocityTracking = 1;// grabParams.velocityTracking;
         (var maxA, var maxAngularA) = CalculateAccelerationLimits(attachedAnchorPos, rot);
 
-        if (attachedReBody.isKinematic)// kinematic bodies are not moved
-        {
-            return;
-            /*if (twoHandMaster || otherHand.twoHandMaster) return;
-
-            attachedBody.MovePosition(worldAnchorPos - (rot * anchorRot) * attachedAnchorPos);
-            attachedBody.MoveRotation(rot * anchorRot);*/
-        }
-        else if (HoldingObjectWithTwoHands)
-        {
-            var normal = otherHand.TwoHandMaster ? otherHand.twoHandAxis : twoHandAxis;
-            // Only apply half of the wanted acceleration, since we will be applying the other half from the other hand.
-            // Otherwise we get a judder when holding an object with two hands nearby
-            Dynamics.ApplyConstantDecelerationLinearProjectedOnPlane(normal, attachedReBody, attachedReBody.TransformPoint(attachedAnchorPos), worldAnchorPos, velocityTracking * velocity, .5f * Physics.gravity, maxA, grabParams.maxLinearVelocity, 0.5f);
-        }
-        else
-        {
-            var pbd = attachedBody.GetComponent<IPositionBasedDynamics>();
-            var treePhysics = attachedBody.GetComponent<ITreePhysics>();
-            if (pbd != null)
-            {
-                pbd.ApplyPosition(worldAnchorPos, rot * anchorRot, attachedAnchorPos);
-            }
-            else if (treePhysics != null && treePhysics.TreePhysicsActive())
-            {
-                var worldPos = attachedReBody.TransformPoint(attachedAnchorPos);
-                var vel = treePhysics.CalculateTreeVelocity(worldPos);
-                var acc = Dynamics.CalculateConstantDecceleration(worldPos, worldAnchorPos, attachedBody.rotation, rot * anchorRot, vel, new Vector6(velocityTracking * angularVelocity, velocityTracking * velocity), maxA, grabParams.maxLinearVelocity, maxAngularA, grabParams.maxAngularVelocity);
-                treePhysics.AddTreeAcceleration(worldPos, acc);
-                //Debug.Log($"{vel},{Dynamics.GetPointVelocity(attachedBody, worldPos)}");
-            }
-            else
-            {
-                if (!grabParams.angularControl)
-                    Dynamics.ApplyConstantDecelerationLinear(attachedReBody, attachedReBody.TransformPoint(attachedAnchorPos), worldAnchorPos, velocityTracking * velocity, Physics.gravity, maxA, grabParams.maxLinearVelocity);
-                else
-                    Dynamics.ApplyConstantDeceleration(attachedReBody, attachedReBody.TransformPoint(attachedAnchorPos), worldAnchorPos, velocityTracking * velocity, maxA, grabParams.maxLinearVelocity,
-                        rot * anchorRot, velocityTracking * angularVelocity, maxAngularA, grabParams.maxAngularVelocity);
-            }
-        }
+        //if (attachedReBody.isKinematic)// kinematic bodies are not moved
+        //{
+        //    return;
+        //    /*if (twoHandMaster || otherHand.twoHandMaster) return;
+        //
+        //    attachedBody.MovePosition(worldAnchorPos - (rot * anchorRot) * attachedAnchorPos);
+        //    attachedBody.MoveRotation(rot * anchorRot);*/
+        //}
+        //else if (HoldingObjectWithTwoHands)
+        //{
+        //    var normal = otherHand.TwoHandMaster ? otherHand.twoHandAxis : twoHandAxis;
+        //    // Only apply half of the wanted acceleration, since we will be applying the other half from the other hand.
+        //    // Otherwise we get a judder when holding an object with two hands nearby
+        //    Dynamics.ApplyConstantDecelerationLinearProjectedOnPlane(normal, attachedReBody, attachedReBody.TransformPoint(attachedAnchorPos), worldAnchorPos, velocityTracking * velocity, .5f * Physics.gravity, maxA, grabParams.maxLinearVelocity, 0.5f);
+        //}
+        //else
+        //{
+        //    var pbd = attachedBody.GetComponent<IPositionBasedDynamics>();
+        //    var treePhysics = attachedBody.GetComponent<ITreePhysics>();
+        //    if (pbd != null)
+        //    {
+        //        pbd.ApplyPosition(worldAnchorPos, rot * anchorRot, attachedAnchorPos);
+        //    }
+        //    else if (treePhysics != null && treePhysics.TreePhysicsActive())
+        //    {
+        //        var worldPos = attachedReBody.TransformPoint(attachedAnchorPos);
+        //        var vel = treePhysics.CalculateTreeVelocity(worldPos);
+        //        var acc = Dynamics.CalculateConstantDecceleration(worldPos, worldAnchorPos, attachedBody.rotation, rot * anchorRot, vel, new Vector6(velocityTracking * angularVelocity, velocityTracking * velocity), maxA, grabParams.maxLinearVelocity, maxAngularA, grabParams.maxAngularVelocity);
+        //        treePhysics.AddTreeAcceleration(worldPos, acc);
+        //        //Debug.Log($"{vel},{Dynamics.GetPointVelocity(attachedBody, worldPos)}");
+        //    }
+        //    else
+        //    {
+        //        if (!grabParams.angularControl)
+        //            Dynamics.ApplyConstantDecelerationLinear(attachedReBody, attachedReBody.TransformPoint(attachedAnchorPos), worldAnchorPos, velocityTracking * velocity, Physics.gravity, maxA, grabParams.maxLinearVelocity);
+        //        else
+        //            Dynamics.ApplyConstantDeceleration(attachedReBody, attachedReBody.TransformPoint(attachedAnchorPos), worldAnchorPos, velocityTracking * velocity, maxA, grabParams.maxLinearVelocity,
+        //                rot * anchorRot, velocityTracking * angularVelocity, maxAngularA, grabParams.maxAngularVelocity);
+        //    }
+        //}
     }
     private void SnapToCollider(Vector3 pos, Quaternion rot)
     {
