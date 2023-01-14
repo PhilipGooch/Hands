@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     //public PlayerUIManager playerUIManager;
 
     //public Move move;
-    public VRLocomotion vrLoco;
+    //public VRLocomotion vrLoco;
 
     public Hand leftHand;
     public Hand rightHand;
@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
         {
             DestroyImmediate(gameObject);
         }
-        SetControllerMovementEnabled(GameSettings.Instance.locomotionMode.Value == (int)LocomotionMode.JOYSTICK);
+        //SetControllerMovementEnabled(GameSettings.Instance.locomotionMode.Value == (int)LocomotionMode.JOYSTICK);
         //SetCameraRotationMode(GameSettings.Instance.CamRotationMode);
         //SetCameraMovementMode(GameSettings.Instance.CamMovementMode);
         SetInstantCameraAnimations(GameSettings.Instance.instantCameraAnimations.Value);
@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
 
     public void SetControllerMovementEnabled(bool movementEnabled)
     {
-        vrLoco.LimitedMovement = !movementEnabled;
+        //vrLoco.LimitedMovement = !movementEnabled;
         //move.LimitedMovement = !movementEnabled;
     }
 
@@ -154,7 +154,7 @@ public class Player : MonoBehaviour
         target.transform.position = transform.position;
         target.transform.rotation = transform.rotation;
 
-        target.vrLoco.ResetPosition();
+        //target.vrLoco.ResetPosition();
 
         AdjustPlayerHeight(target);
 
@@ -162,11 +162,12 @@ public class Player : MonoBehaviour
 
     public void CalibrateHeight()
     {
-        var diff = mainCamera.transform.position - vrLoco.transform.position;
-        var heightDiff = diff.y;
-        var presumedPlayerHeight = heightDiff / PlayArea.scale;
-        GameSettings.Instance.playerHeight.Value = presumedPlayerHeight * 100f;
+        //var diff = mainCamera.transform.position - vrLoco.transform.position;
+        //var heightDiff = diff.y;
+        //var presumedPlayerHeight = heightDiff / PlayArea.scale;
+        //GameSettings.Instance.playerHeight.Value = presumedPlayerHeight * 100f;
     }
+
     public void AdjustPlayerHeight()
     {
         AdjustPlayerHeight(Instance);
@@ -190,7 +191,7 @@ public class Player : MonoBehaviour
     {
         ReadPose(leftHand.handDirection, out var posL, out var velL);
         ReadPose(rightHand.handDirection, out var posR, out var velR);
-        vrLoco.OnFixedStep(ref posL, ref velL, ref posR, ref velR);
+        //vrLoco.OnFixedStep(ref posL, ref velL, ref posR, ref velR);
         leftHand.ReadPose(posL.pos, posL.rot, velL.linear, velL.angular);
         rightHand.ReadPose(posR.pos, posR.rot, velR.linear, velR.angular);
 

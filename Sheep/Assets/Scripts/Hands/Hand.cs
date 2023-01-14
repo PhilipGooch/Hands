@@ -3,12 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using VR.System;
 
-// from old plug...
-public interface IConstraint
-{
-    void Apply(ref Vector3 targetPos, ref Quaternion targetRot, ref Vector6 targetVel);
-}
-
 public class Hand : MonoBehaviour
 {
     [SerializeField]
@@ -33,7 +27,6 @@ public class Hand : MonoBehaviour
     public Rigidbody attachedBody;
     //ReBody attachedReBody;
     public Vector3 attachedTensor;
-    GrabParams grabParams;
 
     Vector3 attachedAnchorPos = Vector3.zero;
     Vector3 anchorPos = Vector3.zero;
@@ -157,11 +150,11 @@ public class Hand : MonoBehaviour
         if (!vrPos.IsFinite()) vrPos = pos;
 
         // The velocity we receive is local. If the player is rotated it will be wrong. To get the world velocity we need to multiply by the player rot
-        var playerRotation = Player.Instance.vrLoco.transform.rotation;
-        if (!vrVelocity.IsFinite()) vrVelocity = velocity;
-        else vrVelocity = playerRotation * vrVelocity;
-        if (!vrAngularVelocity.IsFinite()) vrAngularVelocity = angularVelocity;
-        else vrAngularVelocity = playerRotation * vrAngularVelocity;
+        //var playerRotation = Player.Instance.vrLoco.transform.rotation;
+        //if (!vrVelocity.IsFinite()) vrVelocity = velocity;
+        //else vrVelocity = playerRotation * vrVelocity;
+        //if (!vrAngularVelocity.IsFinite()) vrAngularVelocity = angularVelocity;
+        //else vrAngularVelocity = playerRotation * vrAngularVelocity;
 
 
         if (attachedBody != null) // anchor reprojection - to avoid forces in certain directions
@@ -325,7 +318,7 @@ public class Hand : MonoBehaviour
 
     public void OnLateUpdate()
     {
-        handVisuals.UpdateVisuals(pos, rot, grabParams, attachedAnchorPos, anchorPos, anchorRot, HoldingObjectWithTwoHands);
+        handVisuals.UpdateVisuals(pos, rot, attachedAnchorPos, anchorPos, anchorRot, HoldingObjectWithTwoHands);
     }
 
     public void InterceptGrab(Rigidbody bodyToGrab, Vector3 grabPosition)

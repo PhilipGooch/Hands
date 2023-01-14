@@ -23,19 +23,19 @@ public class GameSettings
     //IntStoredValue cameraRotationMode = new IntStoredValue("cameraRotationMode", (int)CameraRotationMode.DEGREES_25);
     //IntStoredValue cameraMovementMode = new IntStoredValue("cameraMovementMode", (int)CameraMovementMode.SmallJump);
 
-    public IntStoredValue locomotionMode = new IntStoredValue("locomotionMode", (int)LocomotionMode.JOYSTICK);
+    //public IntStoredValue locomotionMode = new IntStoredValue("locomotionMode", (int)LocomotionMode.JOYSTICK);
 
-    public LocomotionMode LocomotionMode
-    {
-        get
-        {
-            return (LocomotionMode)locomotionMode.Value;
-        }
-        set
-        {
-            locomotionMode.Value = (int)value;
-        }
-    }
+    //public LocomotionMode LocomotionMode
+    //{
+    //    get
+    //    {
+    //        return (LocomotionMode)locomotionMode.Value;
+    //    }
+    //    set
+    //    {
+    //        locomotionMode.Value = (int)value;
+    //    }
+    //}
 
     //public CameraRotationMode CamRotationMode
     //{

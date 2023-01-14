@@ -27,7 +27,7 @@ public class HandVisuals : MonoBehaviour
         recoverFromRotation = Model.localRotation;
     }
 
-    public void UpdateVisuals(Vector3 pos, Quaternion rot, GrabParams grabParams, Vector3 attachedAnchorPos, Vector3 anchorPos, Quaternion anchorRot, bool HoldingObjectWithTwoHands)
+    public void UpdateVisuals(Vector3 pos, Quaternion rot, Vector3 attachedAnchorPos, Vector3 anchorPos, Quaternion anchorRot, bool HoldingObjectWithTwoHands)
     {
         recoverPhase += Time.deltaTime / .25f; // 250ms
         if (recoverPhase > 1) recoverPhase = 1;
