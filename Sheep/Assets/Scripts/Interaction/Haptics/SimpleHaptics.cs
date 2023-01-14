@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [System.Serializable]
-public class SimpleHaptics : IGrabNotifications
+public class SimpleHaptics// : IGrabNotifications
 {
     [SerializeField]
     private float vibrationDelay = 0;

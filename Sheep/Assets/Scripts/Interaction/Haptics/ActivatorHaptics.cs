@@ -5,7 +5,7 @@ public class ActivatorHaptics : HapticsBase
     [SerializeField]
     int clicksFromFullActivation = 10;
 
-    ObjectActivator activator;
+    //ObjectActivator activator;
 
     float lastValue;
     float deltaWithoutVibration;
@@ -17,16 +17,16 @@ public class ActivatorHaptics : HapticsBase
 
         active = true;
 
-        activator = GetComponent<ObjectActivator>();
+        //activator = GetComponent<ObjectActivator>();
 
         deltaToVibrate = 1f / clicksFromFullActivation;
-        lastValue = activator.ActivationAmount;
+        //lastValue = activator.ActivationAmount;
     }
 
     void FixedUpdate()
     {
-        deltaWithoutVibration += Mathf.Abs(lastValue - activator.ActivationAmount);
-        lastValue = activator.ActivationAmount;
+        //deltaWithoutVibration += Mathf.Abs(lastValue - activator.ActivationAmount);
+        //lastValue = activator.ActivationAmount;
         if (deltaWithoutVibration > deltaToVibrate)
         {
             deltaWithoutVibration -= deltaToVibrate;

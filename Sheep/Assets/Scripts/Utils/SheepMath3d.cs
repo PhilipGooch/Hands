@@ -1,7 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System;
-using NBG.Core;
 
 public static class SheepMath3d
 {

@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     //[SerializeField]
     //public PlayerUIManager playerUIManager;
 
-    public Move move;
+    //public Move move;
     public VRLocomotion vrLoco;
 
     public Hand leftHand;
@@ -52,8 +52,8 @@ public class Player : MonoBehaviour
             DestroyImmediate(gameObject);
         }
         SetControllerMovementEnabled(GameSettings.Instance.locomotionMode.Value == (int)LocomotionMode.JOYSTICK);
-        SetCameraRotationMode(GameSettings.Instance.CamRotationMode);
-        SetCameraMovementMode(GameSettings.Instance.CamMovementMode);
+        //SetCameraRotationMode(GameSettings.Instance.CamRotationMode);
+        //SetCameraMovementMode(GameSettings.Instance.CamMovementMode);
         SetInstantCameraAnimations(GameSettings.Instance.instantCameraAnimations.Value);
 
         return Instance;
@@ -77,27 +77,27 @@ public class Player : MonoBehaviour
     public void SetControllerMovementEnabled(bool movementEnabled)
     {
         vrLoco.LimitedMovement = !movementEnabled;
-        move.LimitedMovement = !movementEnabled;
+        //move.LimitedMovement = !movementEnabled;
     }
 
     public void SetControllerRotationEnabled(bool rotationEnabled)
     {
-        move.LimitedRotation = !rotationEnabled;
+        //move.LimitedRotation = !rotationEnabled;
     }
 
-    public void SetCameraRotationMode(CameraRotationMode rotationMode)
-    {
-        move.SetRotationMode(rotationMode);
-    }
-
-    public void SetCameraMovementMode(CameraMovementMode movementMode)
-    {
-        move.SetMovementMode(movementMode);
-    }
+    //public void SetCameraRotationMode(CameraRotationMode rotationMode)
+    //{
+    //    move.SetRotationMode(rotationMode);
+    //}
+    //
+    //public void SetCameraMovementMode(CameraMovementMode movementMode)
+    //{
+    //    move.SetMovementMode(movementMode);
+    //}
 
     public void SetInstantCameraAnimations(bool instantAnimations)
     {
-        move.InstantAnimations = instantAnimations;
+        //move.InstantAnimations = instantAnimations;
     }
 
     public void StopGrabbingObject(Rigidbody body)

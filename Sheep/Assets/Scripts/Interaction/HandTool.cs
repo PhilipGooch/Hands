@@ -1,11 +1,8 @@
-﻿using NBG.LogicGraph;
-using System;
+﻿using System;
 using UnityEngine;
 
-
-
 //Hand tool is an object that can be activated with a hand trigger once grabbed
-public class HandTool : MonoBehaviour, ITriggerHandler, IGrabNotifications
+public class HandTool : MonoBehaviour, ITriggerHandler//, IGrabNotifications
 {
     [SerializeField]
     [Range(0f, 1f)]
@@ -15,7 +12,7 @@ public class HandTool : MonoBehaviour, ITriggerHandler, IGrabNotifications
     [SerializeField]
     public bool toggleActivation = false;
 
-    GrabPositionAndRotationOverride grabOverride;
+    //GrabPositionAndRotationOverride grabOverride;
     bool canBeActivatedWithTrigger = false;
     float lastActivationPressure = 0f;
 
@@ -25,19 +22,19 @@ public class HandTool : MonoBehaviour, ITriggerHandler, IGrabNotifications
     public bool TwoHanded => twoHanded;
     protected bool twoHanded = false;
 
-    [NodeAPI("OnActivationChange")]
+    //[NodeAPI("OnActivationChange")]
     public event Action<float> OnActivationChange;
 
     protected virtual void Awake()
     {
-        if (requiresSnappedGrab)
-        {
-            grabOverride = GetComponent<GrabPositionAndRotationOverride>();
-            if (grabOverride == null)
-            {
-                Debug.LogError("RequiresSnappedGrab setting needs a GrabPositionAndRotationOverride component!", gameObject);
-            }
-        }
+        //if (requiresSnappedGrab)
+        //{
+        //    grabOverride = GetComponent<GrabPositionAndRotationOverride>();
+        //    if (grabOverride == null)
+        //    {
+        //        Debug.LogError("RequiresSnappedGrab setting needs a GrabPositionAndRotationOverride component!", gameObject);
+        //    }
+        //}
 
         OnActivationChange?.Invoke(0);
     }
@@ -77,7 +74,7 @@ public class HandTool : MonoBehaviour, ITriggerHandler, IGrabNotifications
     {
         if (firstGrab)
         {
-            canBeActivatedWithTrigger = requiresSnappedGrab ? grabOverride.HandIsWithinSnappingZone(hand.transform.position, hand.rot) : true;
+            //canBeActivatedWithTrigger = requiresSnappedGrab ? grabOverride.HandIsWithinSnappingZone(hand.transform.position, hand.rot) : true;
             mainHand = hand;
             twoHanded = false;
         }
@@ -101,7 +98,7 @@ public class HandTool : MonoBehaviour, ITriggerHandler, IGrabNotifications
         else
         {
             // We released this hand, but the other hand might still be able to operate the tool
-            canBeActivatedWithTrigger = requiresSnappedGrab ? grabOverride.HandIsWithinSnappingZone(hand.otherHand.transform.position, hand.otherHand.rot) : true;
+            //canBeActivatedWithTrigger = requiresSnappedGrab ? grabOverride.HandIsWithinSnappingZone(hand.otherHand.transform.position, hand.otherHand.rot) : true;
             twoHanded = false;
             mainHand = hand.otherHand;
         }

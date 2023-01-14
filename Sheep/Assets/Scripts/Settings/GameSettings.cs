@@ -20,8 +20,8 @@ public class GameSettings
     public IntStoredValue masterVolume = new IntStoredValue("masterVolume", 20);
     public BooleanStoredValue instantCameraAnimations = new BooleanStoredValue("instantCameraAnimations", false);
 
-    IntStoredValue cameraRotationMode = new IntStoredValue("cameraRotationMode", (int)CameraRotationMode.DEGREES_25);
-    IntStoredValue cameraMovementMode = new IntStoredValue("cameraMovementMode", (int)CameraMovementMode.SmallJump);
+    //IntStoredValue cameraRotationMode = new IntStoredValue("cameraRotationMode", (int)CameraRotationMode.DEGREES_25);
+    //IntStoredValue cameraMovementMode = new IntStoredValue("cameraMovementMode", (int)CameraMovementMode.SmallJump);
 
     public IntStoredValue locomotionMode = new IntStoredValue("locomotionMode", (int)LocomotionMode.JOYSTICK);
 
@@ -37,29 +37,29 @@ public class GameSettings
         }
     }
 
-    public CameraRotationMode CamRotationMode
-    {
-        get
-        {
-            return (CameraRotationMode)cameraRotationMode.Value;
-        }
-        set
-        {
-            cameraRotationMode.Value = (int)value;
-        }
-    }
-
-    public CameraMovementMode CamMovementMode
-    {
-        get
-        {
-            return (CameraMovementMode)cameraMovementMode.Value;
-        }
-        set
-        {
-            cameraMovementMode.Value = (int)value;
-        }
-    }
+    //public CameraRotationMode CamRotationMode
+    //{
+    //    get
+    //    {
+    //        return (CameraRotationMode)cameraRotationMode.Value;
+    //    }
+    //    set
+    //    {
+    //        cameraRotationMode.Value = (int)value;
+    //    }
+    //}
+    //
+    //public CameraMovementMode CamMovementMode
+    //{
+    //    get
+    //    {
+    //        return (CameraMovementMode)cameraMovementMode.Value;
+    //    }
+    //    set
+    //    {
+    //        cameraMovementMode.Value = (int)value;
+    //    }
+    //}
 
     public class BooleanStoredValue
     {

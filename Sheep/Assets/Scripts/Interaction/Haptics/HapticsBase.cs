@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HapticsBase : MonoBehaviour, IGrabNotifications
+public class HapticsBase : MonoBehaviour//, IGrabNotifications
 {
     public bool active;
     [SerializeField]

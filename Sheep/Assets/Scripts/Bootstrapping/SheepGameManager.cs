@@ -1,15 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Recoil;
-using NBG.Entities;
 using Unity.Jobs;
 using UnityEngine.SceneManagement;
-using NBG.Core;
 using VR.System;
-using NBG.Core.GameSystems;
-using NBG.Core.Events;
-using NBG.Actor;
 
 // AKA BOOTSTRAPPER
 public class SheepGameManager : SingletonBehaviour<SheepGameManager>
@@ -36,12 +29,12 @@ public class SheepGameManager : SingletonBehaviour<SheepGameManager>
             //levelManager.Initialize();
             //playerUIManager.Initialize();
 
-            ManagedWorld.Create(16);
-            EntityStore.Create(10, 500);
-
-            EventBus.Create();
-            GameSystemWorldDefault.Create();
-            RecoilSystems.Initialize(GameSystemWorldDefault.Instance);
+            //ManagedWorld.Create(16);
+            //EntityStore.Create(10, 500);
+            //
+            //EventBus.Create();
+            //GameSystemWorldDefault.Create();
+            //RecoilSystems.Initialize(GameSystemWorldDefault.Instance);
 
             dataManager = DataManager.EnsureInitialized();
 
@@ -50,7 +43,7 @@ public class SheepGameManager : SingletonBehaviour<SheepGameManager>
 
             //Threat.Initialize();
 
-            GameSystemWorldDefault.DebugPrint("boot");
+            //GameSystemWorldDefault.DebugPrint("boot");
 
             transform.parent = null;
             DontDestroyOnLoad(this);
@@ -59,20 +52,20 @@ public class SheepGameManager : SingletonBehaviour<SheepGameManager>
 
     void OnSceneLoad(Scene scene)
     {
-        RigidbodyRegistration.Register(scene);
+        //RigidbodyRegistration.Register(scene);
         // Boot actors after recoil. (And recommended before ManagedBehaviours, since activity in those is in user land)
-        BootActors.ClearBooterState();
-        BootActors.RunInits(scene);
-        BootManagedBehaviours.RunOnLevelLoaded(scene);
-        BootManagedBehaviours.NotifyOnLevelLoadedDone();
-        BootManagedBehaviours.RunOnAfterLevelLoaded(scene);
-        BootManagedBehaviours.NotifyOnAfterLevelLoadedDone();
+        //BootActors.ClearBooterState();
+        //BootActors.RunInits(scene);
+        //BootManagedBehaviours.RunOnLevelLoaded(scene);
+        //BootManagedBehaviours.NotifyOnLevelLoadedDone();
+        //BootManagedBehaviours.RunOnAfterLevelLoaded(scene);
+        //BootManagedBehaviours.NotifyOnAfterLevelLoadedDone();
     }
 
     void OnSceneUnload(Scene scene)
     {
-        BootManagedBehaviours.RunUnloadAll();
-        RigidbodyRegistration.Unregister(scene);
+        //BootManagedBehaviours.RunUnloadAll();
+        //RigidbodyRegistration.Unregister(scene);
         // Fixed update will run after this. Disable everything to prevent executing code for unregistered recoil bodies.
         tempObjectList.Clear();
         scene.GetRootGameObjects(tempObjectList);
@@ -87,18 +80,18 @@ public class SheepGameManager : SingletonBehaviour<SheepGameManager>
         if (Instance == this)
         {
             // Must Unload all managed behaviours in order to correctly dispose of things like ropes.
-            BootManagedBehaviours.RunUnloadAll();
-            RigidbodyRegistration.UnregisterAll();
-            //Threat.Dispose();
-            //SheepScareIterative.Dispose();
-            //LevelManager.onSceneUnloaded -= OnSceneUnload;
-            //LevelManager.onSceneLoaded -= OnSceneLoad;
-            RigidbodyRegistration.UnregisterAll();
-            RecoilSystems.Shutdown();
-            GameSystemWorldDefault.Destroy();
-            EventBus.Destroy();
-            EntityStore.Destroy();
-            ManagedWorld.Destroy();
+            //BootManagedBehaviours.RunUnloadAll();
+            //RigidbodyRegistration.UnregisterAll();
+            ////Threat.Dispose();
+            ////SheepScareIterative.Dispose();
+            ////LevelManager.onSceneUnloaded -= OnSceneUnload;
+            ////LevelManager.onSceneLoaded -= OnSceneLoad;
+            //RigidbodyRegistration.UnregisterAll();
+            //RecoilSystems.Shutdown();
+            //GameSystemWorldDefault.Destroy();
+            //EventBus.Destroy();
+            //EntityStore.Destroy();
+            //ManagedWorld.Destroy();
         }
     }
 }
