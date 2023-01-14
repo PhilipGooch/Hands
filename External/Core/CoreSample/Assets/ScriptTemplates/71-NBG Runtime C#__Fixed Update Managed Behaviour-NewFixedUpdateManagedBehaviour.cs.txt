@@ -1,0 +1,34 @@
+using NBG.Core;
+using Recoil;
+using UnityEngine;
+
+namespace Experimental
+{
+    /// <summary>
+    /// TODO: please fill out
+    /// </summary>
+    public class #SCRIPTNAME# : MonoBehaviour, IManagedBehaviour, IOnFixedUpdate
+    {
+        bool IOnFixedUpdate.Enabled => isActiveAndEnabled;
+
+        void IManagedBehaviour.OnLevelLoaded()
+        {
+            OnFixedUpdateSystem.Register(this);
+        }
+
+        void IManagedBehaviour.OnAfterLevelLoaded()
+        {
+            #NOTRIM#
+        }
+
+        void IManagedBehaviour.OnLevelUnloaded()
+        {
+            OnFixedUpdateSystem.Unregister(this);
+        }
+
+        void IOnFixedUpdate.OnFixedUpdate()
+        {
+            #NOTRIM#
+        }
+    }
+}

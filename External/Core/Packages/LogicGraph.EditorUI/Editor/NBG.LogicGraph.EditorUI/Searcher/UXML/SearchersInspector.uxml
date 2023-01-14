@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" nbg="NBG.LogicGraph.EditorUI" editor-extension-mode="True" name="inspector" class="inspector-view">
+    <Style src="/Packages/com.nobrakesgames.logicgraph.editorui/Editor/NBG.LogicGraph.EditorUI/USS/LogicGraph.uss" />
+    <ui:VisualElement name="headerContainer" class="tabs-header-container">
+        <ui:Label text="Searcher" display-tooltip-when-elided="true" name="header" class="tabs-header-label" />
+        <uie:ToolbarSpacer />
+        <ui:Label display-tooltip-when-elided="true" name="nodeName" style="-unity-text-align: middle-left;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="contentContainer" class="tabs-content-container" style="flex-grow: 1;">
+        <NBG.LogicGraph.EditorUI.SearcherContainerView name="hierarchySearcher" style="min-height: 50%;" />
+        <NBG.LogicGraph.EditorUI.SearcherContainerView name="builtinSearcher" style="min-height: 50%;" />
+    </ui:VisualElement>
+</ui:UXML>

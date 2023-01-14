@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" nbg="NBG.LogicGraph.EditorUI" editor-extension-mode="True">
+    <Style src="/Packages/com.nobrakesgames.logicgraph.editorui/Editor/NBG.LogicGraph.EditorUI/USS/LogicGraph.uss" />
+    <ui:VisualElement name="rootContainer" style="background-color: rgba(75, 75, 75, 0.85); -unity-background-image-tint-color: rgb(255, 255, 255); padding-left: 1px; padding-right: 1px; padding-top: 1px; padding-bottom: 1px;">
+        <ui:VisualElement name="generalSettingsContainer">
+            <ui:Label text="General Settings:" display-tooltip-when-elided="true" style="-unity-font-style: bold;" />
+            <ui:Toggle label="Minimap" name="toggleMinimap" />
+        </ui:VisualElement>
+        <ui:VisualElement name="searcherSettingsContainer">
+            <ui:Label text="Searcher Settings:" display-tooltip-when-elided="true" style="-unity-font-style: bold;" />
+            <ui:VisualElement name="searcherVisibility" class="settings-view-segment-view">
+                <ui:Label text="Toggle visibility:" display-tooltip-when-elided="true" style="-unity-font-style: italic;" />
+                <ui:Toggle label="Built-In" name="toggleBuiltInSearcher" style="flex-direction: row;" />
+                <ui:Toggle label="Hierarchy" name="toggleHierarchySearcher" />
+            </ui:VisualElement>
+            <ui:VisualElement name="searcherVisibleTypes" class="settings-view-segment-view">
+                <ui:Label text="Toggle Visible Types:" display-tooltip-when-elided="true" style="-unity-font-style: italic;" />
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="searcherVisibleTypesScrollView">
+                    <ui:VisualElement name="searcherVisibleTypesContainer" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

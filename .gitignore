@@ -1,0 +1,9 @@
+# Build System
+/BuildSystem/
+
+# Externals - combats accidental commits when switching between branches with outdated externals
+External/*
+!External/Core
+
+# Other
+*.blend1

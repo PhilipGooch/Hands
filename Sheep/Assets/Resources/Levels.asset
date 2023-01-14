@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0b512f3e146e14386dd56bac22eac7, type: 3}
+  m_Name: Levels
+  m_EditorClassIdentifier: 
+  chapters:
+  - name: Levels
+    levels:
+      array:
+      - name: Docks
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: ed35345b3906a644882fbe18cf2b7aeb,
+            type: 3}
+          m_SceneName: K01
+        selectionPrefab: {fileID: 8625081898254656436, guid: 5cb4090e2defb904bbe6ee90cca4e88b,
+          type: 3}
+        id: ed35345b3906a644882fbe18cf2b7aeb
+      - name: AxePuzzles
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: 0ba39ce04e67737479053994e8341c57,
+            type: 3}
+          m_SceneName: V01
+        selectionPrefab: {fileID: 8625081898254656436, guid: 5cb4090e2defb904bbe6ee90cca4e88b,
+          type: 3}
+        id: 0ba39ce04e67737479053994e8341c57
+      - name: Herding
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: 46234b12e24295f469f2b893c1bc7d25,
+            type: 3}
+          m_SceneName: T1 Herding
+        selectionPrefab: {fileID: 8625081898254656436, guid: 5cb4090e2defb904bbe6ee90cca4e88b,
+          type: 3}
+        id: 46234b12e24295f469f2b893c1bc7d25
+      - name: Windmill
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: 8ff52f30d60c2534fa092795bc89b9f4,
+            type: 3}
+          m_SceneName: C0
+        selectionPrefab: {fileID: 8625081898254656436, guid: 6260226b03d4976458129841d75cf84d,
+          type: 3}
+        id: 8ff52f30d60c2534fa092795bc89b9f4
+      - name: SpaceY
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: 5d06b1b9aff7b2447960e3cb6d80aabd,
+            type: 3}
+          m_SceneName: C7
+        selectionPrefab: {fileID: 8625081898254656436, guid: 5cb4090e2defb904bbe6ee90cca4e88b,
+          type: 3}
+        id: 5d06b1b9aff7b2447960e3cb6d80aabd
+      - name: Village
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: 59d9e3a6096001144bf56f0f9f2fcae4,
+            type: 3}
+          m_SceneName: C1A
+        selectionPrefab: {fileID: 8934454662877462102, guid: 4d216496128898a4cbcf1c5d9723331a,
+          type: 3}
+        id: 59d9e3a6096001144bf56f0f9f2fcae4
+      - name: Village
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: 811050425ecd51b4fb0dba0dffe6e44b,
+            type: 3}
+          m_SceneName: C1B
+        selectionPrefab: {fileID: 8625081898254656436, guid: 5cb4090e2defb904bbe6ee90cca4e88b,
+          type: 3}
+        id: 811050425ecd51b4fb0dba0dffe6e44b
+      - name: Mines
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: a2f8cb26df483ce41b5f0dc0a3add916,
+            type: 3}
+          m_SceneName: C2A
+        selectionPrefab: {fileID: 8625081898254656436, guid: a9ff318c99a82394dbdc508aa730ebbc,
+          type: 3}
+        id: a2f8cb26df483ce41b5f0dc0a3add916
+    selectionPrefab: {fileID: 0}
+    id: b5908724-4697-4e03-9f70-033b5e1d2456
+  mainMenuScene:
+    m_SceneAsset: {fileID: 102900000, guid: 545ddcc99113d48419f0e7865f88275e, type: 3}
+    m_SceneName: MainMenu
+  bootstrapScene:
+    m_SceneAsset: {fileID: 102900000, guid: d9b4e612e7c790a46b98e7e77011d2e6, type: 3}
+    m_SceneName: Bootstrap

@@ -1,0 +1,30 @@
+{
+    "name": "SheepEditModeTests",
+    "rootNamespace": "",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "SheepRuntime",
+        "SheepEditor",
+        "Unity.Mathematics",
+        "NBG.NodeGraph",
+        "NBG.Recoil",
+        "NBG.Entities",
+        "NBG.Core"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

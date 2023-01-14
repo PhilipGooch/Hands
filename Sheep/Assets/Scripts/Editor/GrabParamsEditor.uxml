@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+  <engine:VisualElement style="flex-direction: row;">
+    <engine:Toggle name="angularControl" binding-path="angularControl"/>
+    <engine:Label text="Angular control"/>
+  </engine:VisualElement>
+  <engine:VisualElement class="grabparamsrow">
+    <engine:Toggle name="toggle" binding-path="_overrideMassMultiplier"/>
+    <editor:PropertyField binding-path="_massMultiplier"/>
+  </engine:VisualElement>
+
+  <engine:VisualElement class="grabparamsrow">
+    <engine:Toggle name="toggle" binding-path="_overrideVelocityTracking"/>
+    <editor:PropertyField binding-path="_velocityTracking"/>
+  </engine:VisualElement>
+
+  <engine:VisualElement class="grabparamsrow">
+    <engine:Toggle name="toggle" binding-path="_overrideMaxLinearAcceleration" />
+    <editor:PropertyField binding-path="_maxLinearAcceleration"/>
+  </engine:VisualElement>
+
+  <engine:VisualElement class="grabparamsrow">
+    <engine:Toggle name="toggle" binding-path="_overrideMaxLinearVelocity"/>
+    <editor:PropertyField binding-path="_maxLinearVelocity"/>
+  </engine:VisualElement>
+
+  <engine:VisualElement class="grabparamsrow angular">
+    <engine:Toggle name="toggle" binding-path="_overrideMaxAngularAcceleration"/>
+    <editor:PropertyField binding-path="_maxAngularAcceleration"/>
+  </engine:VisualElement>
+
+  <engine:VisualElement class="grabparamsrow angular">
+    <engine:Toggle name="toggle" binding-path="_overrideMaxAngularVelocity"/>
+    <editor:PropertyField binding-path="_maxAngularVelocity"/>
+  </engine:VisualElement>
+
+  <engine:VisualElement class="grabparamsrow">
+    <engine:Toggle name="toggle" binding-path="_overrideReanchor"/>
+    <editor:PropertyField binding-path="_reanchor"/>
+  </engine:VisualElement>
+
+  <engine:VisualElement class="grabparamsrow">
+    <engine:Toggle name="toggle" binding-path="_overrideSnapToCollider"/>
+    <editor:PropertyField binding-path="_snapToCollider"/>
+  </engine:VisualElement>
+  <engine:VisualElement class="grabparamsrow">
+    <engine:Toggle name="toggle" binding-path="_overrideLinearAnchorRange"/>
+    <editor:PropertyField binding-path="_linearAnchorRange"/>
+  </engine:VisualElement>
+  <engine:VisualElement class="grabparamsrow">
+    <engine:Toggle name="toggle" binding-path="_overrideLinearAnchorSpeed"/>
+    <editor:PropertyField binding-path="_linearAnchorSpeed"/>
+  </engine:VisualElement>
+  <engine:VisualElement class="grabparamsrow angular">
+    <engine:Toggle name="toggle" binding-path="_overrideAngularAnchorRange"/>
+    <editor:PropertyField binding-path="_angularAnchorRange"/>
+  </engine:VisualElement>
+  <engine:VisualElement class="grabparamsrow angular">
+    <engine:Toggle name="toggle" binding-path="_overrideAngularAnchorSpeed"/>
+    <editor:PropertyField binding-path="_angularAnchorSpeed"/>
+  </engine:VisualElement>
+
+
+
+  <editor:PropertyField binding-path="fallback"/>
+
+</engine:UXML>

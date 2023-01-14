@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0b512f3e146e14386dd56bac22eac7, type: 3}
+  m_Name: Levels Demo
+  m_EditorClassIdentifier: 
+  chapters:
+  - name: Levels
+    levels:
+      array:
+      - name: Windmill
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: 8ff52f30d60c2534fa092795bc89b9f4,
+            type: 3}
+          m_SceneName: C0
+        selectionPrefab: {fileID: 8625081898254656436, guid: 6260226b03d4976458129841d75cf84d,
+          type: 3}
+        id: 8ff52f30d60c2534fa092795bc89b9f4
+      - name: Village
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: ab8ff641ceba53243af94dde0b89952c,
+            type: 3}
+          m_SceneName: C1
+        selectionPrefab: {fileID: 8934454662877462102, guid: 4d216496128898a4cbcf1c5d9723331a,
+          type: 3}
+        id: ab8ff641ceba53243af94dde0b89952c
+      - name: Mines
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: 7c6da53669170304ba52dbf90d5f234c,
+            type: 3}
+          m_SceneName: C2
+        selectionPrefab: {fileID: 8625081898254656436, guid: a9ff318c99a82394dbdc508aa730ebbc,
+          type: 3}
+        id: 7c6da53669170304ba52dbf90d5f234c
+      - name: River
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: 54fd7feb4fd4b544b9625bd162cae65a,
+            type: 3}
+          m_SceneName: C4
+        selectionPrefab: {fileID: 8625081898254656436, guid: 6e25a825ef31a7b47afe4dfff4458bed,
+          type: 3}
+        id: 54fd7feb4fd4b544b9625bd162cae65a
+      - name: Downtown
+        scene:
+          m_SceneAsset: {fileID: 102900000, guid: ba62ac1c2cd067c45a4686f9c7d617ce,
+            type: 3}
+          m_SceneName: C3
+        selectionPrefab: {fileID: 8625081898254656436, guid: 4a59ce1f32d3d3548af5b39a9e635166,
+          type: 3}
+        id: ba62ac1c2cd067c45a4686f9c7d617ce
+    selectionPrefab: {fileID: 0}
+    id: d76a8308-0e47-4c45-998e-6afcb9c7c507
+  mainMenuScene:
+    m_SceneAsset: {fileID: 102900000, guid: 545ddcc99113d48419f0e7865f88275e, type: 3}
+    m_SceneName: MainMenu
+  bootstrapScene:
+    m_SceneAsset: {fileID: 102900000, guid: d9b4e612e7c790a46b98e7e77011d2e6, type: 3}
+    m_SceneName: Bootstrap

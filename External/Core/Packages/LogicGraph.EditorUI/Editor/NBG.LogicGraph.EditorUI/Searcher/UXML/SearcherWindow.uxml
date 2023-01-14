@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" nbg="NBG.LogicGraph.EditorUI" editor-extension-mode="True">
+    <Style src="/Packages/com.nobrakesgames.logicgraph.editorui/Editor/NBG.LogicGraph.EditorUI/USS/LogicGraph.uss" />
+    <ui:VisualElement name="rootContainer" focusable="true" style="flex-grow: 1;">
+        <NBG.LogicGraph.EditorUI.SearcherContainerView name="searcherWindowContainerView" />
+        <ui:VisualElement name="resizableDraggerContainer" class="searcher-resizable-dragger-container">
+            <ui:VisualElement name="resizeDragger" class="searcher-resizable-dragger-view" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

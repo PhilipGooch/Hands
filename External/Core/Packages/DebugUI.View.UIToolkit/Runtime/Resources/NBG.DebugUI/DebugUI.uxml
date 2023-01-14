@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="DebugUI.uss" />
+    <ui:VisualElement name="root" usage-hints="DynamicTransform" picking-mode="Ignore" focusable="true" style="max-height: none; min-height: 100%; justify-content: space-between;">
+        <ui:VisualElement name="topContent">
+            <ui:VisualElement name="titleBar" class="title-bar">
+                <ui:TextElement text="Sample  " display-tooltip-when-elided="true" name="catName" />
+                <ui:TextElement text="Debug UI" display-tooltip-when-elided="true" name="extraInfo" />
+            </ui:VisualElement>
+            <ui:VisualElement name="catParent" />
+        </ui:VisualElement>
+        <ui:VisualElement name="botContent" style="align-items: flex-end; justify-content: flex-end;">
+            <ui:TextElement name="log" class="log" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

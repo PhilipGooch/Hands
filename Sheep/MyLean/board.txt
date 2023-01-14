@@ -1,0 +1,94 @@
+%YAML 1.2
+---
+!MyLean.Model.Board
+Filename: ..\..\board.txt
+Iterations: 
+  ICollection.Items: 
+    - &C 
+      Description: Interaction Dynamics
+      Board: null
+      State: null
+      Name: Physics
+Tasks: 
+  ICollection.Items: 
+    - &B 
+      Description: null
+      Board: null
+      State: Done
+      Feature: &A 
+        Description: null
+        Tasks: 
+          ICollection.Items: 
+            - &D 
+              Description: null
+              Board: null
+              State: Done
+              Feature: *A
+              Name: Effective mass calculation
+            - &E 
+              Description: null
+              Board: null
+              State: Done
+              Feature: *A
+              Name: Max force, fixed damping ratio
+            - &H 
+              Description: null
+              Board: null
+              State: Todo
+              Feature: *A
+              Name: Soft knee force
+            - &G 
+              Description: null
+              Board: null
+              State: Todo
+              Feature: *A
+              Name: Use in hands
+            - &F 
+              Description: null
+              Board: null
+              State: Done
+              Feature: *A
+              Name: Implemented Stable PD
+            - *B
+            - &I 
+              Description: null
+              Board: null
+              State: Done
+              Feature: *A
+              Name: No damper if shortening spring
+            - &J 
+              Description: null
+              Board: null
+              State: Done
+              Feature: *A
+              Name: Don't apply more acceleration than can stop
+            - &K 
+              Description: null
+              Board: null
+              State: Todo
+              Feature: *A
+              Name: Predict external acceleration
+        Board: null
+        State: Doing
+        Iteration: *C
+        Name: Linear spring
+      Name: Snap, not spring if possible
+    - *D
+    - *E
+    - *F
+    - *G
+    - *H
+    - *I
+    - *J
+    - *K
+Features: 
+  ICollection.Items: 
+    - Description: null
+      Tasks: {}
+      Board: null
+      State: Todo
+      Iteration: *C
+      Name: Angular spring
+    - *A
+Name: null
+...

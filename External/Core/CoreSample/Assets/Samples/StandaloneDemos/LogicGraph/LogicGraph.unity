@@ -1,0 +1,2723 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 0.5
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &56744079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56744080}
+  - component: {fileID: 56744081}
+  m_Layer: 0
+  m_Name: Light1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &56744080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56744079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 308352525}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &56744081
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56744079}
+  m_Enabled: 0
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0, g: 0.41509432, b: 0.0023337218, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &61483573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61483575}
+  - component: {fileID: 61483574}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &61483574
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61483573}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 0.1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &61483575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61483573}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &282134856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 282134858}
+  - component: {fileID: 282134857}
+  m_Layer: 0
+  m_Name: SampleLogicGraph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &282134857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282134856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35fb20014e7c11c498e623767b4a89d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializationVersion: 0
+  _entries:
+  - id:
+      m_GuidLow: 5096679556421268207
+      m_GuidHigh: 1984514614022121143
+    entry:
+      NodeType: Function
+      BindingName: OpenFunc2
+      BindingType: Sample.LogicGraph.Door, Assembly-CSharp
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 4945375649172437717
+        m_GuidHigh: 12973344682084059831
+      Properties: []
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+      StackInputs:
+      - Name: value
+        Type: 0
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5100292218317974751
+          m_GuidHigh: 11099810801725003429
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 4898906227355178855
+      m_GuidHigh: 16259720880094319764
+    entry:
+      NodeType: Function
+      BindingName: Toggle
+      BindingType: Sample.LogicGraph.Lamp, Assembly-CSharp
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 5613059673134213857
+        m_GuidHigh: 10023511463472598667
+      Properties: []
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+      StackInputs:
+      - Name: powered
+        Type: 0
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5463634740274189017
+          m_GuidHigh: 6152524947139930776
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5100292218317974751
+      m_GuidHigh: 11099810801725003429
+    entry:
+      NodeType: CustomEvent
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: EventName
+        Type: 3
+        Value: Open Door
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 4782654100511665989
+          m_GuidHigh: 10326046373324288136
+      StackInputs: []
+      StackOutputs:
+      - Name: isOpen
+        Type: 0
+      - Name: something
+        Type: 2
+  - id:
+      m_GuidLow: 4733219205034705095
+      m_GuidHigh: 7062072985160186558
+    entry:
+      NodeType: Sequence
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 5096679556421268207
+          m_GuidHigh: 1984514614022121143
+      - Name: out
+        Target:
+          m_GuidLow: 4898906227355178855
+          m_GuidHigh: 16259720880094319764
+      - Name: out
+        Target:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+      StackInputs: []
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5196326990663308991
+      m_GuidHigh: 4384336161639601556
+    entry:
+      NodeType: Function
+      BindingName: OpenFunc1
+      BindingType: Sample.LogicGraph.Door, Assembly-CSharp
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 4945375649172437717
+        m_GuidHigh: 12973344682084059831
+      Properties: []
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+      StackInputs: []
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5319454940586003665
+      m_GuidHigh: 12060171648599932080
+    entry:
+      NodeType: Function
+      BindingName: OpenFunc1
+      BindingType: Sample.LogicGraph.Door, Assembly-CSharp
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 4945375649172437717
+        m_GuidHigh: 12973344682084059831
+      Properties: []
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+      StackInputs: []
+      StackOutputs: []
+  - id:
+      m_GuidLow: 4616218962641020515
+      m_GuidHigh: 17067770651482660766
+    entry:
+      NodeType: Function
+      BindingName: OpenFunc2
+      BindingType: Sample.LogicGraph.Door, Assembly-CSharp
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 4945375649172437717
+        m_GuidHigh: 12973344682084059831
+      Properties: []
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+      StackInputs:
+      - Name: value
+        Type: 0
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 4782654100511665989
+      m_GuidHigh: 10326046373324288136
+    entry:
+      NodeType: Function
+      BindingName: SlamDoor
+      BindingType: Sample.LogicGraph.Door, Assembly-CSharp
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 4945375649172437717
+        m_GuidHigh: 12973344682084059831
+      Properties: []
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 4733219205034705095
+          m_GuidHigh: 7062072985160186558
+      StackInputs:
+      - Name: initialPower
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5100292218317974751
+          m_GuidHigh: 11099810801725003429
+        ReferenceIndex: 1
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5463634740274189017
+      m_GuidHigh: 6152524947139930776
+    entry:
+      NodeType: Function
+      BindingName: Approximately
+      BindingType: NBG.LogicGraph.StandardNodes.MathFloat, NBG.LogicGraph.StandardNodes
+      BindingStatic: 1
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs: []
+      StackInputs:
+      - Name: a
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 4782654100511665989
+          m_GuidHigh: 10326046373324288136
+        ReferenceIndex: 0
+      - Name: b
+        Type: 2
+        Constant: 1
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5501764285282798113
+      m_GuidHigh: 7551225312596678049
+    entry:
+      NodeType: Variable
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: VariableId
+        Type: 6
+        Value: 5681863625043506141,17368027297891270586
+      FlowOutputs: []
+      StackInputs: []
+      StackOutputs: []
+  - id:
+      m_GuidLow: 4746095403675397934
+      m_GuidHigh: 5440719868323991720
+    entry:
+      NodeType: CustomGetter
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: OutputName
+        Type: 3
+        Value: ExampleGetter
+      FlowOutputs: []
+      StackInputs:
+      - Name: out
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5501764285282798113
+          m_GuidHigh: 7551225312596678049
+        ReferenceIndex: 0
+      StackOutputs: []
+  _variables:
+  - id:
+      m_GuidLow: 5681863625043506141
+      m_GuidHigh: 17368027297891270586
+    entry:
+      Name: TestVar
+      Type: 2
+      Value: 3.1337
+  _unityObjectReferences:
+  - id:
+      m_GuidLow: 4945375649172437717
+      m_GuidHigh: 12973344682084059831
+    obj: {fileID: 2120884927}
+  - id:
+      m_GuidLow: 5613059673134213857
+      m_GuidHigh: 10023511463472598667
+    obj: {fileID: 308352529}
+  _nodeUIDatas:
+  - nodeId:
+      m_GuidLow: 5096679556421268207
+      m_GuidHigh: 1984514614022121143
+    data:
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: -55
+        width: 182
+        height: 103
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4898906227355178855
+      m_GuidHigh: 16259720880094319764
+    data:
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 62
+        width: 190
+        height: 103
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5100292218317974751
+      m_GuidHigh: 11099810801725003429
+    data:
+      rect:
+        serializedVersion: 2
+        x: -284
+        y: -112
+        width: 152
+        height: 92
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4733219205034705095
+      m_GuidHigh: 7062072985160186558
+    data:
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: -114
+        width: 134
+        height: 140
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5196326990663308991
+      m_GuidHigh: 4384336161639601556
+    data:
+      rect:
+        serializedVersion: 2
+        x: -437.59998
+        y: -285.8
+        width: 100
+        height: 100
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5319454940586003665
+      m_GuidHigh: 12060171648599932080
+    data:
+      rect:
+        serializedVersion: 2
+        x: -225.59998
+        y: -318.8
+        width: 100
+        height: 100
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4616218962641020515
+      m_GuidHigh: 17067770651482660766
+    data:
+      rect:
+        serializedVersion: 2
+        x: -421.6
+        y: -399.19998
+        width: 186.40001
+        height: 103.2
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4782654100511665989
+      m_GuidHigh: 10326046373324288136
+    data:
+      rect:
+        serializedVersion: 2
+        x: -28
+        y: -166
+        width: 236
+        height: 103
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5463634740274189017
+      m_GuidHigh: 6152524947139930776
+    data:
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 87
+        width: 177
+        height: 92
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5501764285282798113
+      m_GuidHigh: 7551225312596678049
+    data:
+      rect:
+        serializedVersion: 2
+        x: 317.6042
+        y: 284.43842
+        width: 100
+        height: 100
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4746095403675397934
+      m_GuidHigh: 5440719868323991720
+    data:
+      rect:
+        serializedVersion: 2
+        x: 528.8
+        y: 263.2
+        width: 146.40002
+        height: 89.600006
+      color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!4 &282134858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282134856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 446211077}
+  m_Father: {fileID: 919321580}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &308352524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 308352525}
+  - component: {fileID: 308352528}
+  - component: {fileID: 308352527}
+  - component: {fileID: 308352526}
+  - component: {fileID: 308352529}
+  m_Layer: 0
+  m_Name: Lamp1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &308352525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308352524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 2.317, z: 0.3}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.1}
+  m_Children:
+  - {fileID: 56744080}
+  m_Father: {fileID: 446211077}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &308352526
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308352524}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &308352527
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308352524}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &308352528
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308352524}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &308352529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308352524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b203aad356e7ee248b0e8bee93f3295d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlledLight: {fileID: 56744081}
+  powered: 0
+--- !u!1 &382030798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382030800}
+  - component: {fileID: 382030799}
+  m_Layer: 0
+  m_Name: WORLD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &382030799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382030798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78d02d37e6e92548a84154357ac1557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &382030800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382030798}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &438634170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 438634172}
+  - component: {fileID: 438634171}
+  m_Layer: 0
+  m_Name: QALogicGraph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &438634171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438634170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35fb20014e7c11c498e623767b4a89d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializationVersion: 0
+  _entries:
+  - id:
+      m_GuidLow: 5662050126985357555
+      m_GuidHigh: 3116587685221175204
+    entry:
+      NodeType: CustomEvent
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: EventName
+        Type: 3
+        Value: 
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 4798353486383687856
+          m_GuidHigh: 13119408889295184308
+      StackInputs: []
+      StackOutputs:
+      - Name: tempVarName
+        Type: 0
+      - Name: tempVarName
+        Type: 2
+      - Name: tempVarName
+        Type: 1
+      - Name: tempVarName
+        Type: 3
+      - Name: tempVarName
+        Type: 5
+      - Name: tempVarName
+        Type: 4
+      - Name: tempVarName
+        Type: 7
+  - id:
+      m_GuidLow: 4814201836641105185
+      m_GuidHigh: 6980897446862009995
+    entry:
+      NodeType: Function
+      BindingName: Test
+      BindingType: Sample.LogicGraph.AllInputsAndOutputs, Assembly-CSharp
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 4880463568880400894
+        m_GuidHigh: 8316024074244436382
+      Properties: []
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+      StackInputs:
+      - Name: boolInputTest
+        Type: 0
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: floatInputTest
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: intInputTest
+        Type: 1
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: stringInputTest
+        Type: 3
+        Constant: 
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: objectInputTest
+        Type: 5
+        Constant: 0,0
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: vector3InputTest
+        Type: 4
+        Constant: 0,0,0
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: quaternionInputTest
+        Type: 7
+        Constant: 0,0,0,0
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 4798353486383687856
+      m_GuidHigh: 13119408889295184308
+    entry:
+      NodeType: Function
+      BindingName: Test
+      BindingType: Sample.LogicGraph.AllInputsAndOutputs, Assembly-CSharp
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 4880463568880400894
+        m_GuidHigh: 8316024074244436382
+      Properties: []
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+      StackInputs:
+      - Name: boolInputTest
+        Type: 0
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5662050126985357555
+          m_GuidHigh: 3116587685221175204
+        ReferenceIndex: 0
+      - Name: floatInputTest
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5662050126985357555
+          m_GuidHigh: 3116587685221175204
+        ReferenceIndex: 1
+      - Name: intInputTest
+        Type: 1
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5662050126985357555
+          m_GuidHigh: 3116587685221175204
+        ReferenceIndex: 2
+      - Name: stringInputTest
+        Type: 3
+        Constant: 
+        ReferenceTarget:
+          m_GuidLow: 5662050126985357555
+          m_GuidHigh: 3116587685221175204
+        ReferenceIndex: 3
+      - Name: objectInputTest
+        Type: 5
+        Constant: 0,0
+        ReferenceTarget:
+          m_GuidLow: 5662050126985357555
+          m_GuidHigh: 3116587685221175204
+        ReferenceIndex: 4
+      - Name: vector3InputTest
+        Type: 4
+        Constant: 43.94,0,0
+        ReferenceTarget:
+          m_GuidLow: 5136936535815500710
+          m_GuidHigh: 11352799407356576647
+        ReferenceIndex: 0
+      - Name: quaternionInputTest
+        Type: 7
+        Constant: 0,0,0,0
+        ReferenceTarget:
+          m_GuidLow: 5662050126985357555
+          m_GuidHigh: 3116587685221175204
+        ReferenceIndex: 6
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5070236046103903229
+      m_GuidHigh: 13192016453980895931
+    entry:
+      NodeType: CustomEvent
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: EventName
+        Type: 3
+        Value: 
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+      StackInputs: []
+      StackOutputs:
+      - Name: tempVarName
+        Type: 0
+      - Name: tempVarName
+        Type: 1
+      - Name: tempVarName
+        Type: 2
+      - Name: tempVarName
+        Type: 3
+      - Name: tempVarName
+        Type: 4
+      - Name: tempVarName
+        Type: 5
+      - Name: tempVarName
+        Type: 7
+  - id:
+      m_GuidLow: 4916384807296219449
+      m_GuidHigh: 8280353342066990218
+    entry:
+      NodeType: Function
+      BindingName: Test
+      BindingType: Sample.LogicGraph.AllInputsAndOutputs, Assembly-CSharp
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 4880463568880400894
+        m_GuidHigh: 8316024074244436382
+      Properties: []
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+      StackInputs:
+      - Name: boolInputTest
+        Type: 0
+        Constant: 1
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: floatInputTest
+        Type: 2
+        Constant: 10000
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: intInputTest
+        Type: 1
+        Constant: 1000
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: stringInputTest
+        Type: 3
+        Constant: some string
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: objectInputTest
+        Type: 5
+        Constant: 5008887074057521244,16037922058138798468
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: vector3InputTest
+        Type: 4
+        Constant: -117.484,1E+14,1000000
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: quaternionInputTest
+        Type: 7
+        Constant: 3.79,-18.92,4.14,6.54
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5624454368039579036
+      m_GuidHigh: 6172897787934900914
+    entry:
+      NodeType: Comment
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: Header
+        Type: 3
+        Value: 'Comment Header
+
+'
+      - Name: Body
+        Type: 3
+        Value: comment text
+      FlowOutputs: []
+      StackInputs: []
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5553180336949600501
+      m_GuidHigh: 5902044947225081249
+    entry:
+      NodeType: Group
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: Header
+        Type: 3
+        Value: Empty group
+      FlowOutputs: []
+      StackInputs: []
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5135789261744364090
+      m_GuidHigh: 9879252050727508647
+    entry:
+      NodeType: Group
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: Header
+        Type: 3
+        Value: Group with nodes
+      - Name: Child
+        Type: 6
+        Value: 5136936535815500710,11352799407356576647
+      - Name: Child
+        Type: 6
+        Value: 5745175133862373232,2799922178483265191
+      - Name: Child
+        Type: 6
+        Value: 4904168913286585066,8627743315045940149
+      FlowOutputs: []
+      StackInputs: []
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5136936535815500710
+      m_GuidHigh: 11352799407356576647
+    entry:
+      NodeType: Function
+      BindingName: FloatToVector
+      BindingType: NBG.LogicGraph.StandardNodes.UtilityConversions, NBG.LogicGraph.StandardNodes
+      BindingStatic: 1
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs: []
+      StackInputs:
+      - Name: x
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5745175133862373232
+          m_GuidHigh: 2799922178483265191
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5745175133862373232
+      m_GuidHigh: 2799922178483265191
+    entry:
+      NodeType: Function
+      BindingName: BoolToFloat
+      BindingType: NBG.LogicGraph.StandardNodes.UtilityConversions, NBG.LogicGraph.StandardNodes
+      BindingStatic: 1
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs: []
+      StackInputs:
+      - Name: value
+        Type: 0
+        Constant: 1
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: whenTrue
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: whenFalse
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 4904168913286585066
+          m_GuidHigh: 8627743315045940149
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 4904168913286585066
+      m_GuidHigh: 8627743315045940149
+    entry:
+      NodeType: Function
+      BindingName: Arcsine
+      BindingType: NBG.LogicGraph.StandardNodes.MathFloat, NBG.LogicGraph.StandardNodes
+      BindingStatic: 1
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs: []
+      StackInputs:
+      - Name: x
+        Type: 2
+        Constant: 1
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5048106859090742611
+      m_GuidHigh: 9244624110528660627
+    entry:
+      NodeType: Comment
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: Header
+        Type: 3
+        Value: 
+      - Name: Body
+        Type: 3
+        Value: 
+      FlowOutputs: []
+      StackInputs: []
+      StackOutputs: []
+  _variables: []
+  _unityObjectReferences:
+  - id:
+      m_GuidLow: 4880463568880400894
+      m_GuidHigh: 8316024074244436382
+    obj: {fileID: 861714783}
+  - id:
+      m_GuidLow: 5008887074057521244
+      m_GuidHigh: 16037922058138798468
+    obj: {fileID: 11500000, guid: aac874355d2b6c7419e140983c2eb8c1, type: 3}
+  _nodeUIDatas:
+  - nodeId:
+      m_GuidLow: 5662050126985357555
+      m_GuidHigh: 3116587685221175204
+    data:
+      rect:
+        serializedVersion: 2
+        x: -77.6
+        y: -208
+        width: 144
+        height: 257.6
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4798353486383687856
+      m_GuidHigh: 13119408889295184308
+    data:
+      rect:
+        serializedVersion: 2
+        x: 137.6
+        y: -219.2
+        width: 298.4
+        height: 295.2
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4814201836641105185
+      m_GuidHigh: 6980897446862009995
+    data:
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 76
+        width: 298.4
+        height: 295.2
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5070236046103903229
+      m_GuidHigh: 13192016453980895931
+    data:
+      rect:
+        serializedVersion: 2
+        x: -77.6
+        y: 76
+        width: 144
+        height: 258.40002
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4916384807296219449
+      m_GuidHigh: 8280353342066990218
+    data:
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 371.2
+        width: 308
+        height: 311.2
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5624454368039579036
+      m_GuidHigh: 6172897787934900914
+    data:
+      rect:
+        serializedVersion: 2
+        x: -308.8
+        y: -202.40001
+        width: 199.99998
+        height: 160.8
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5553180336949600501
+      m_GuidHigh: 5902044947225081249
+    data:
+      rect:
+        serializedVersion: 2
+        x: -337.49628
+        y: 239.63484
+        width: 232.8
+        height: 88
+      color: {r: 0.27450982, g: 0.14509805, b: 0.14117648, a: 1}
+  - nodeId:
+      m_GuidLow: 5135789261744364090
+      m_GuidHigh: 9879252050727508647
+    data:
+      rect:
+        serializedVersion: 2
+        x: -637.6
+        y: 340.00015
+        width: 737.6
+        height: 204.79999
+      color: {r: 0.29411766, g: 0.27058825, b: 0.27058825, a: 1}
+  - nodeId:
+      m_GuidLow: 5136936535815500710
+      m_GuidHigh: 11352799407356576647
+    data:
+      rect:
+        serializedVersion: 2
+        x: -152.8
+        y: 403.2
+        width: 227.20001
+        height: 68
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5745175133862373232
+      m_GuidHigh: 2799922178483265191
+    data:
+      rect:
+        serializedVersion: 2
+        x: -408
+        y: 403.2
+        width: 215.2
+        height: 116
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4904168913286585066
+      m_GuidHigh: 8627743315045940149
+    data:
+      rect:
+        serializedVersion: 2
+        x: -612.8
+        y: 406.40002
+        width: 141.59998
+        height: 68
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5048106859090742611
+      m_GuidHigh: 9244624110528660627
+    data:
+      rect:
+        serializedVersion: 2
+        x: -194.4
+        y: -13.599998
+        width: 99.99999
+        height: 103.2
+      color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!4 &438634172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438634170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.65549564, y: 1.1975068, z: 0.05191524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 861714784}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &446211076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 446211077}
+  m_Layer: 0
+  m_Name: Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &446211077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446211076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2120884926}
+  - {fileID: 308352525}
+  - {fileID: 1627432026}
+  m_Father: {fileID: 282134858}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &861714782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 861714784}
+  - component: {fileID: 861714783}
+  m_Layer: 0
+  m_Name: graph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &861714783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861714782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac874355d2b6c7419e140983c2eb8c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boolInputTest: 0
+  floatInputTest: 0
+  intInputTest: 0
+  stringInputTest: 
+  objectInputTest: {fileID: 0}
+  vector3InputTest: {x: 0, y: 0, z: 0}
+  quaternionInputTest: {x: 0, y: 0, z: 0, w: 0}
+--- !u!4 &861714784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861714782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 438634172}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &919321578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 919321580}
+  - component: {fileID: 919321579}
+  m_Layer: 0
+  m_Name: RootLogicGraph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &919321579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919321578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35fb20014e7c11c498e623767b4a89d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializationVersion: 0
+  _entries:
+  - id:
+      m_GuidLow: 5502553221833534183
+      m_GuidHigh: 16431797975401826744
+    entry:
+      NodeType: Event
+      BindingName: OnPressed
+      BindingType: Sample.LogicGraph.Button, Assembly-CSharp
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 5189815167259817511
+        m_GuidHigh: 13530857599690443396
+      Properties: []
+      FlowOutputs:
+      - Name: out
+        Target:
+          m_GuidLow: 4809236828092089001
+          m_GuidHigh: 16163532467576234656
+      StackInputs: []
+      StackOutputs: []
+  - id:
+      m_GuidLow: 4809236828092089001
+      m_GuidHigh: 16163532467576234656
+    entry:
+      NodeType: CallCustomEvent
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: Variant
+        Type: 6
+        Value: 5100292218317974751,11099810801725003429
+      - Name: EventContext
+        Type: 5
+        Value: 5043801516325239953,12225800976438972315
+      FlowOutputs: []
+      StackInputs:
+      - Name: isOpen
+        Type: 0
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 4953701432388845416
+          m_GuidHigh: 9390869045687150731
+        ReferenceIndex: 0
+      - Name: something
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5618801251383234595
+          m_GuidHigh: 9709163786924518303
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5380162813255753057
+      m_GuidHigh: 17339460823770799792
+    entry:
+      NodeType: Function
+      BindingName: IsOpen
+      BindingType: Sample.LogicGraph.Door, Assembly-CSharp
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 4714993175278659639
+        m_GuidHigh: 13708763800458141361
+      Properties: []
+      FlowOutputs: []
+      StackInputs: []
+      StackOutputs: []
+  - id:
+      m_GuidLow: 4953701432388845416
+      m_GuidHigh: 9390869045687150731
+    entry:
+      NodeType: Function
+      BindingName: Invert
+      BindingType: NBG.LogicGraph.StandardNodes.UtilityBoolean, NBG.LogicGraph.StandardNodes
+      BindingStatic: 1
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs: []
+      StackInputs:
+      - Name: a
+        Type: 0
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5380162813255753057
+          m_GuidHigh: 17339460823770799792
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5618801251383234595
+      m_GuidHigh: 9709163786924518303
+    entry:
+      NodeType: Function
+      BindingName: BoolToFloat
+      BindingType: NBG.LogicGraph.StandardNodes.UtilityConversions, NBG.LogicGraph.StandardNodes
+      BindingStatic: 1
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs: []
+      StackInputs:
+      - Name: value
+        Type: 0
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 4953701432388845416
+          m_GuidHigh: 9390869045687150731
+        ReferenceIndex: 0
+      - Name: whenTrue
+        Type: 2
+        Constant: 1
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: whenFalse
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5561860646085771644
+          m_GuidHigh: 11532929075395923599
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 4954044015009698529
+      m_GuidHigh: 6774626129918787200
+    entry:
+      NodeType: Group
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: Header
+        Type: 3
+        Value: Working Sample
+      - Name: Child
+        Type: 6
+        Value: 5502553221833534183,16431797975401826744
+      - Name: Child
+        Type: 6
+        Value: 5380162813255753057,17339460823770799792
+      - Name: Child
+        Type: 6
+        Value: 4953701432388845416,9390869045687150731
+      - Name: Child
+        Type: 6
+        Value: 5618801251383234595,9709163786924518303
+      FlowOutputs: []
+      StackInputs: []
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5561860646085771644
+      m_GuidHigh: 11532929075395923599
+    entry:
+      NodeType: Function
+      BindingName: Multiply
+      BindingType: NBG.LogicGraph.StandardNodes.MathFloat, NBG.LogicGraph.StandardNodes
+      BindingStatic: 1
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs: []
+      StackInputs:
+      - Name: a
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      - Name: b
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5348807167470477916
+          m_GuidHigh: 17236273538318376878
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 4984983437514719997
+      m_GuidHigh: 14443671629358588806
+    entry:
+      NodeType: Function
+      BindingName: Absolute
+      BindingType: NBG.LogicGraph.StandardNodes.MathFloat, NBG.LogicGraph.StandardNodes
+      BindingStatic: 1
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs: []
+      StackInputs:
+      - Name: a
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 4658765795992976269
+      m_GuidHigh: 17133121477407725973
+    entry:
+      NodeType: Function
+      BindingName: World
+      BindingType: NBG.LogicGraph.StandardNodes.UtilityTransform, NBG.LogicGraph.StandardNodes
+      BindingStatic: 1
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs: []
+      StackInputs:
+      - Name: transform
+        Type: 5
+        Constant: 5166317105405555766,3251016980040962731
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5166766750906583245
+      m_GuidHigh: 3709301215371378874
+    entry:
+      NodeType: Function
+      BindingName: Components
+      BindingType: NBG.LogicGraph.StandardNodes.MathQuaternion, NBG.LogicGraph.StandardNodes
+      BindingStatic: 1
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs: []
+      StackInputs:
+      - Name: value
+        Type: 7
+        Constant: 4545,45,455,45
+        ReferenceTarget:
+          m_GuidLow: 0
+          m_GuidHigh: 0
+        ReferenceIndex: 0
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5275670370358088685
+      m_GuidHigh: 4929007736603349900
+    entry:
+      NodeType: Function
+      BindingName: AddFloat
+      BindingType: NBG.LogicGraph.StandardNodes.MathVector3, NBG.LogicGraph.StandardNodes
+      BindingStatic: 1
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties: []
+      FlowOutputs: []
+      StackInputs:
+      - Name: vector
+        Type: 4
+        Constant: 0,454,4554.45
+        ReferenceTarget:
+          m_GuidLow: 4658765795992976269
+          m_GuidHigh: 17133121477407725973
+        ReferenceIndex: 0
+      - Name: value
+        Type: 2
+        Constant: 0
+        ReferenceTarget:
+          m_GuidLow: 5166766750906583245
+          m_GuidHigh: 3709301215371378874
+        ReferenceIndex: 1
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5484959604271410813
+      m_GuidHigh: 14635424669389622415
+    entry:
+      NodeType: Variable
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: VariableId
+        Type: 6
+        Value: 5670514555156091050,3140727726672000929
+      FlowOutputs: []
+      StackInputs: []
+      StackOutputs: []
+  - id:
+      m_GuidLow: 5348807167470477916
+      m_GuidHigh: 17236273538318376878
+    entry:
+      NodeType: HandleCustomGetter
+      BindingName: 
+      BindingType: 
+      BindingStatic: 0
+      Target:
+        m_GuidLow: 0
+        m_GuidHigh: 0
+      Properties:
+      - Name: Variant
+        Type: 6
+        Value: 4746095403675397934,5440719868323991720
+      - Name: OutputContext
+        Type: 5
+        Value: 5043801516325239953,12225800976438972315
+      FlowOutputs: []
+      StackInputs: []
+      StackOutputs:
+      - Name: out
+        Type: 2
+  _variables:
+  - id:
+      m_GuidLow: 5483133148102771362
+      m_GuidHigh: 17538687744110535052
+    entry:
+      Name: Test1
+      Type: 0
+      Value: 0
+  - id:
+      m_GuidLow: 5670514555156091050
+      m_GuidHigh: 3140727726672000929
+    entry:
+      Name: 
+      Type: 7
+      Value: 0,0,454584,4.454546E+30
+  - id:
+      m_GuidLow: 5552184461970308811
+      m_GuidHigh: 18009602601401051280
+    entry:
+      Name: 
+      Type: 5
+      Value: 0,0
+  _unityObjectReferences:
+  - id:
+      m_GuidLow: 5189815167259817511
+      m_GuidHigh: 13530857599690443396
+    obj: {fileID: 1627432030}
+  - id:
+      m_GuidLow: 5043801516325239953
+      m_GuidHigh: 12225800976438972315
+    obj: {fileID: 282134857}
+  - id:
+      m_GuidLow: 4714993175278659639
+      m_GuidHigh: 13708763800458141361
+    obj: {fileID: 2120884927}
+  - id:
+      m_GuidLow: 5166317105405555766
+      m_GuidHigh: 3251016980040962731
+    obj: {fileID: 446211077}
+  _nodeUIDatas:
+  - nodeId:
+      m_GuidLow: 5502553221833534183
+      m_GuidHigh: 16431797975401826744
+    data:
+      rect:
+        serializedVersion: 2
+        x: -152
+        y: -210
+        width: 202
+        height: 78
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5380162813255753057
+      m_GuidHigh: 17339460823770799792
+    data:
+      rect:
+        serializedVersion: 2
+        x: -168
+        y: -46
+        width: 182
+        height: 78
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4953701432388845416
+      m_GuidHigh: 9390869045687150731
+    data:
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: -36
+        width: 116
+        height: 68
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5618801251383234595
+      m_GuidHigh: 9709163786924518303
+    data:
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 55
+        width: 211
+        height: 116
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4809236828092089001
+      m_GuidHigh: 16163532467576234656
+    data:
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: -38
+        width: 210
+        height: 139
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4954044015009698529
+      m_GuidHigh: 6774626129918787200
+    data:
+      rect:
+        serializedVersion: 2
+        x: -193
+        y: -273
+        width: 443
+        height: 469
+      color: {r: 0.29411766, g: 0.27058825, b: 0.27058825, a: 1}
+  - nodeId:
+      m_GuidLow: 4658765795992976269
+      m_GuidHigh: 17133121477407725973
+    data:
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 210
+        width: 243
+        height: 92
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 4984983437514719997
+      m_GuidHigh: 14443671629358588806
+    data:
+      rect:
+        serializedVersion: 2
+        x: -152
+        y: 210
+        width: 117
+        height: 68
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5166766750906583245
+      m_GuidHigh: 3709301215371378874
+    data:
+      rect:
+        serializedVersion: 2
+        x: -8
+        y: 318
+        width: 265
+        height: 140
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5275670370358088685
+      m_GuidHigh: 4929007736603349900
+    data:
+      rect:
+        serializedVersion: 2
+        x: 282.19348
+        y: 210.02594
+        width: 100
+        height: 100
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5484959604271410813
+      m_GuidHigh: 14635424669389622415
+    data:
+      rect:
+        serializedVersion: 2
+        x: -252
+        y: 210
+        width: 89
+        height: 68
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5348807167470477916
+      m_GuidHigh: 17236273538318376878
+    data:
+      rect:
+        serializedVersion: 2
+        x: -674
+        y: 81
+        width: 210
+        height: 90
+      color: {r: 0, g: 0, b: 0, a: 0}
+  - nodeId:
+      m_GuidLow: 5561860646085771644
+      m_GuidHigh: 11532929075395923599
+    data:
+      rect:
+        serializedVersion: 2
+        x: -437
+        y: 79
+        width: 118
+        height: 92
+      color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!4 &919321580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919321578}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 282134858}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1201212458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1201212462}
+  - component: {fileID: 1201212461}
+  - component: {fileID: 1201212460}
+  - component: {fileID: 1201212459}
+  m_Layer: 0
+  m_Name: Ground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1201212459
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201212458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1201212460
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201212458}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1201212461
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201212458}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1201212462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201212458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1627432025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1627432026}
+  - component: {fileID: 1627432029}
+  - component: {fileID: 1627432028}
+  - component: {fileID: 1627432027}
+  - component: {fileID: 1627432030}
+  m_Layer: 0
+  m_Name: Button1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1627432026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627432025}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.25, y: 0.5, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_Children: []
+  m_Father: {fileID: 446211077}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1627432027
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627432025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1627432028
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627432025}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1627432029
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627432025}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1627432030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627432025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71449cca8ced91a4fae1cfaca5c5b6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interval: 50
+  initial: 40
+--- !u!1 &1713048159
+GameObject:
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1713048161}
+  - component: {fileID: 1713048160}
+  m_Layer: 0
+  m_Name: NBG_OBJECT_ID_DATABASE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1713048160
+MonoBehaviour:
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713048159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b4fdc87b680af4cbb4d0dd9d825de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nextID: 37
+  _sceneIDEntries:
+  - gameObject: {fileID: 1780745565}
+    sceneId: 22
+  - gameObject: {fileID: 1201212458}
+    sceneId: 23
+  - gameObject: {fileID: 61483573}
+    sceneId: 24
+  - gameObject: {fileID: 282134856}
+    sceneId: 25
+  - gameObject: {fileID: 446211076}
+    sceneId: 26
+  - gameObject: {fileID: 2120884925}
+    sceneId: 27
+  - gameObject: {fileID: 1879338644}
+    sceneId: 28
+  - gameObject: {fileID: 308352524}
+    sceneId: 29
+  - gameObject: {fileID: 56744079}
+    sceneId: 30
+  - gameObject: {fileID: 1627432025}
+    sceneId: 31
+  - gameObject: {fileID: 1713048159}
+    sceneId: 32
+  - gameObject: {fileID: 919321578}
+    sceneId: 33
+  - gameObject: {fileID: 382030798}
+    sceneId: 34
+  - gameObject: {fileID: 438634170}
+    sceneId: 35
+  - gameObject: {fileID: 861714782}
+    sceneId: 36
+--- !u!4 &1713048161
+Transform:
+  m_ObjectHideFlags: 9
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713048159}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1780745565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1780745568}
+  - component: {fileID: 1780745567}
+  - component: {fileID: 1780745566}
+  - component: {fileID: 1780745569}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1780745566
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780745565}
+  m_Enabled: 1
+--- !u!20 &1780745567
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780745565}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1780745568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780745565}
+  m_LocalRotation: {x: 0.023968766, y: -0.909808, z: 0.053068116, w: 0.4109243}
+  m_LocalPosition: {x: 2.51, y: 1.481, z: 2.063}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 6.676, y: -131.386, z: 0}
+--- !u!114 &1780745569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780745565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+--- !u!1 &1879338644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1879338645}
+  - component: {fileID: 1879338648}
+  - component: {fileID: 1879338647}
+  - component: {fileID: 1879338646}
+  m_Layer: 0
+  m_Name: Panel1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1879338645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879338644}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 0.2}
+  m_Children: []
+  m_Father: {fileID: 2120884926}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1879338646
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879338644}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1879338647
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879338644}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1879338648
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879338644}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2120884925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2120884926}
+  - component: {fileID: 2120884927}
+  m_Layer: 0
+  m_Name: Door1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2120884926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120884925}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1879338645}
+  m_Father: {fileID: 446211077}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2120884927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120884925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d11c4b057022104f82be0369b80d7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  open: 0

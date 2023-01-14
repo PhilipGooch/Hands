@@ -1,0 +1,83 @@
+{
+   "action_sets" : [
+      {
+         "name" : "/actions/Default",
+         "usage" : "leftright"
+      }
+   ],
+   "actions" : [
+      {
+         "name" : "/actions/Default/in/Trigger",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/Default/in/Grip",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/Default/in/Pose",
+         "requirement" : "mandatory",
+         "type" : "pose"
+      },
+      {
+         "name" : "/actions/Default/in/Move",
+         "requirement" : "mandatory",
+         "type" : "vector2"
+      },
+      {
+         "name" : "/actions/Default/in/TrackpadTouch",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/Default/in/TriggerAnalog",
+         "type" : "vector1"
+      },
+      {
+         "name" : "/actions/Default/in/AButton",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/Default/in/BButton",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/Default/in/HandGripPose",
+         "requirement" : "mandatory",
+         "type" : "pose"
+      },
+      {
+         "name" : "/actions/Default/in/SkeletonLeft",
+         "requirement" : "mandatory",
+         "skeleton" : "/skeleton/hand/left",
+         "type" : "skeleton"
+      },
+      {
+         "name" : "/actions/Default/in/SkeletonRight",
+         "requirement" : "mandatory",
+         "skeleton" : "/skeleton/hand/right",
+         "type" : "skeleton"
+      },
+      {
+         "name" : "/actions/Default/out/Haptic",
+         "type" : "vibration"
+      }
+   ],
+   "default_bindings" : [
+      {
+         "binding_url" : "application_generated_unity_sheep_exe_binding_knuckles.json",
+         "controller_type" : "knuckles"
+      },
+      {
+         "binding_url" : "application_generated_unity_sheep_exe_binding_vive_controller.json",
+         "controller_type" : "vive_controller"
+      },
+      {
+         "binding_url" : "application_generated_unity_sheep_exe_binding_oculus_touch.json",
+         "controller_type" : "oculus_touch"
+      }
+   ],
+   "localization" : []
+}

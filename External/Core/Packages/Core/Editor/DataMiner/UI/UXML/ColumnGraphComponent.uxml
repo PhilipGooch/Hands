@@ -1,0 +1,17 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">  
+    <Box name="frameTimeGraph" class="component">
+        <VisualElement class="horizontal">
+            <Label name="sliceDetails" text="Timing"/>
+            <uie:ToolbarMenu name="selectDataset" text="Select dataset"/>
+             <Button name="delete" text="X" class="button" style="right:0; position:absolute;"/>
+        </VisualElement>
+        <Box name="graphBox" class="component-graph graph-bg">
+            <VisualElement name="msLine" class="component-msLine">
+                <TextElement name="msLineText"/>           
+            </VisualElement>
+                <VisualElement name="selectionColumns" style="bottom:0px;" class="graph-plot-elements-parent"/>
+        </Box>
+        <Box name="graphDetailsBox" >
+        </Box>
+    </Box>
+</UXML>

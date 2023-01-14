@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="inspection.rules.default.json" />
+    <None Remove="Unity\NBG_Automation_Generated_Workaround_1372139.shader" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\Packages\Core\Editor\BuildSystem\Shared\BuildSystemTypes.cs" Link="Shared\Core\BuildSystemTypes.cs" />
+    <Compile Include="..\..\Packages\Automation.RuntimeTests\Runtime\Shared\Settings.cs" Link="Shared\RuntimeTests\Settings.cs" />
+	<Compile Include="..\..\Packages\Automation.RuntimeTests\Runtime\Shared\TestStatus.cs" Link="Shared\RuntimeTests\TestStatus.cs" />
+    <Compile Include="..\..\Packages\Core\Runtime\BuildSystem\Shared\BuildVersionData.cs" Link="Shared\Core\BuildVersionData.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="inspection.rules.default.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Unity\NBG_Automation_Generated_Workaround_1372139.shader">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CliWrap" Version="3.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.17" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.17" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.17" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.17" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="3.1.17" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+    <PackageReference Include="TeamCity.ServiceMessages" Version="3.0.13" />
+  </ItemGroup>
+
+</Project>

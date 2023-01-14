@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d340f1d25fc334049bb9129ee5be0ce5, type: 3}
+  m_Name: WetWood
+  m_EditorClassIdentifier: 
+  canBeNailedByHand: 1
+  canBeAxed: 1
+  granular: 0
+  buoyancy: 1500
+  flammable: 0
+  timeToIgnite: 2
+  burnable: 0
+  burnDuration: 5
+  canExtinguishWithMovement: 1
+  canExtinguishWithWind: 1
+  velocityToExtinguishFire: 20
+  canSelfExtinguish: 1
+  timeUntilSelfExtinguish: 5
+  spawnFireParticles: 1
+  darkenColorWhenOnFire: 1
+  maxColorTintFromFire: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
+  timeForFullTintFromFire: 5
+  createFireSourceWhenOnFire: 1
+  magnetic: 0
+  transfersElectricCurrent: 0

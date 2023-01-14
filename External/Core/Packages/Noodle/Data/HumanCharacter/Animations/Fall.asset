@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba44486806e2c54fa7cf6b5a9484de0, type: 3}
+  m_Name: Fall
+  m_EditorClassIdentifier: 
+  fallback: {fileID: 0}
+  tracks:
+  - name: torso.hipsPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 1
+      easeType: 2
+      value: 0
+    - time: 15
+      easeType: 2
+      value: -5
+    - time: 100
+      easeType: 2
+      value: -15
+  - name: torso.waistPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 1
+      easeType: 2
+      value: 10
+    - time: 15
+      easeType: 2
+      value: -10
+    - time: 100
+      easeType: 2
+      value: -15
+  - name: torso.chestPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 1
+      easeType: 2
+      value: 20
+    - time: 15
+      easeType: 2
+      value: -15
+    - time: 100
+      easeType: 2
+      value: -15
+  - name: handL.pitch
+    frames:
+    - time: 0
+      easeType: 4
+      value: -75
+  - name: handL.yaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 15
+  - name: handL.bend
+    frames:
+    - time: 0
+      easeType: 4
+      value: 90
+  - name: handL.elbowAngle
+    frames:
+    - time: 0
+      easeType: 0
+      value: 60
+  - name: handR.pitch
+    frames:
+    - time: 0
+      easeType: 4
+      value: -75
+  - name: handR.yaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 15
+  - name: handR.bend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 90
+  - name: handR.elbowAngle
+    frames:
+    - time: 0
+      easeType: 0
+      value: 60
+  - name: legL.pitch
+    frames:
+    - time: 0
+      easeType: 2
+      value: 0
+    - time: 2
+      easeType: 4
+      value: 15
+    - time: 11
+      easeType: 4
+      value: -50
+    - time: 26
+      easeType: 2
+      value: -20
+    - time: 100
+      easeType: 2
+      value: 10
+  - name: legL.stretch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 26
+      easeType: 4
+      value: 10
+  - name: legL.bend
+    frames:
+    - time: 0
+      easeType: 2
+      value: 10
+    - time: 8
+      easeType: 6
+      value: 90
+    - time: 15
+      easeType: 2
+      value: 45
+  - name: legL.fkParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.ikBlend
+    frames:
+    - time: 0
+      easeType: 2
+      value: 0
+  - name: legL.ikDrive
+    frames:
+    - time: 0
+      easeType: 2
+      value: 0
+  - name: legR.pitch
+    frames:
+    - time: 0
+      easeType: 2
+      value: 0
+    - time: 2
+      easeType: 4
+      value: 0
+    - time: 11
+      easeType: 4
+      value: -60
+    - time: 27
+      easeType: 2
+      value: -30
+    - time: 100
+      easeType: 2
+      value: 10
+  - name: legR.stretch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 27
+      easeType: 4
+      value: 10
+  - name: legR.bend
+    frames:
+    - time: 0
+      easeType: 2
+      value: 10
+    - time: 8
+      easeType: 6
+      value: 90
+    - time: 15
+      easeType: 2
+      value: 10
+  - name: legR.fkParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.ikBlend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.ikDrive
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  looped: 0
+  frameLength: 100
+  playbackSpeed: 1

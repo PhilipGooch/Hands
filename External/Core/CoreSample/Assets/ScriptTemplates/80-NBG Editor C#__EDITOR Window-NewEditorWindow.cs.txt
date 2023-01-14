@@ -1,0 +1,43 @@
+// This file must be in Editor folder
+
+using UnityEditor;
+using UnityEngine;
+
+namespace Experimental.Editor
+{
+    /// <summary>
+    /// TODO: please fill out
+    /// </summary>    
+    public class #SCRIPTNAME# : EditorWindow
+    {
+        [MenuItem("No Brakes Games/Experimental/#SCRIPTNAME#...")]
+        public static void ShowWindow()
+        {
+            GetWindow(typeof(#SCRIPTNAME#), false, "#SCRIPTNAME#", true);
+        }
+
+        private void Execute (Object selectedObject)
+        {
+            Debug.Log($"Fill out what you want the #SCRIPTNAME# tool to do here for each selected object");
+        }
+
+        void OnGUI()
+        {
+            Object[] selectedObjects = Selection.objects;
+
+            // Expose parameter controls here
+
+            EditorGUILayout.Space();
+
+            if (GUILayout.Button("Execute #SCRIPTNAME#"))
+            {
+                for (int i=0; i<selectedObjects.Length; i++)
+                {
+                    Execute(selectedObjects[i]);
+                }
+            }
+        }
+
+    }
+}
+

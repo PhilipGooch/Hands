@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba44486806e2c54fa7cf6b5a9484de0, type: 3}
+  m_Name: Jump
+  m_EditorClassIdentifier: 
+  fallback: {fileID: 0}
+  tracks:
+  - name: torso.hipsPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 150
+      easeType: 4
+      value: 30
+  - name: torso.waistPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 150
+      easeType: 4
+      value: 22.5
+  - name: torso.chestPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 150
+      easeType: 4
+      value: 15
+  - name: legL.pitch
+    frames:
+    - time: 0
+      easeType: 4
+      value: 0
+    - time: 150
+      easeType: 6
+      value: 15
+  - name: legL.bend
+    frames:
+    - time: 0
+      easeType: 4
+      value: 0
+    - time: 150
+      easeType: 6
+      value: 15
+  - name: legL.fkParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.ikBlend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.upperTonus
+    frames:
+    - time: 1
+      easeType: 0
+      value: 1
+    - time: 12
+      easeType: 6
+      value: 0.1
+  - name: legL.lowerTonus
+    frames:
+    - time: 1
+      easeType: 0
+      value: 1
+    - time: 12
+      easeType: 6
+      value: 0.1
+  - name: legL.ikDrive
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.pitch
+    frames:
+    - time: 0
+      easeType: 4
+      value: 0
+    - time: 150
+      easeType: 6
+      value: 15
+  - name: legR.bend
+    frames:
+    - time: 0
+      easeType: 4
+      value: 0
+    - time: 150
+      easeType: 6
+      value: 10
+  - name: legR.fkParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.ikBlend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.upperTonus
+    frames:
+    - time: 1
+      easeType: 0
+      value: 1
+    - time: 13
+      easeType: 6
+      value: 0.1
+  - name: legR.lowerTonus
+    frames:
+    - time: 1
+      easeType: 0
+      value: 1
+    - time: 13
+      easeType: 6
+      value: 0.1
+  - name: legR.ikDrive
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  looped: 0
+  frameLength: 150
+  playbackSpeed: 1

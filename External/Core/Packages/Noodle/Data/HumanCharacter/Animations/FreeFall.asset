@@ -1,0 +1,274 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba44486806e2c54fa7cf6b5a9484de0, type: 3}
+  m_Name: FreeFall
+  m_EditorClassIdentifier: 
+  fallback: {fileID: 0}
+  tracks:
+  - name: torso.cg.y
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.33
+  - name: torso.hipsPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 90
+  - name: torso.hipsYaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: torso.hipsRoll
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: torso.waistPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 90
+  - name: torso.waistYaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: torso.waistRoll
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: torso.chestPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 90
+  - name: torso.chestYaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: torso.chestRoll
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: torso.suspensionTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: torso.angularTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.02
+  - name: torso.tonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.005
+  - name: head.pitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 71
+  - name: head.yaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: head.roll
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: head.tonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.5
+  - name: handL.pitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: handL.yaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 37
+  - name: handL.bend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: handL.elbowAngle
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: handL.wristAngle
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: handL.upperTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.01
+  - name: handL.lowerTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.01
+  - name: handL.ikDrive
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: handR.pitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: handR.yaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 37
+  - name: handR.bend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: handR.elbowAngle
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: handR.wristAngle
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: handR.upperTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.01
+  - name: handR.lowerTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.01
+  - name: handR.ikDrive
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.pitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.stretch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 21
+  - name: legL.bend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.twist
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.fkParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+  - name: legL.ikBlend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.upperTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.01
+  - name: legL.lowerTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.01
+  - name: legL.ikDrive
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.pitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.stretch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 21
+  - name: legR.bend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.twist
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.fkParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+  - name: legR.ikBlend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.upperTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.01
+  - name: legR.lowerTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.01
+  - name: legR.ikDrive
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  looped: 0
+  frameLength: 100
+  playbackSpeed: 1

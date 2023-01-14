@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc4720c2d3807844a31dd21ff9e5844, type: 3}
+  m_Name: GameParameters
+  m_EditorClassIdentifier: 
+  meshFireParticles: {fileID: 8090684466477442802, guid: d6ff433da58a83c4bad1bff350ac2ca5,
+    type: 3}
+  continuousFireParticles: {fileID: -4050337917786747640, guid: 4656d0e93b3776944a32d0db36c085ab,
+    type: 3}
+  waterParticles: {fileID: 1757205106338605336, guid: 7328c7d4cf6fbda40b36d74e2e170ea1,
+    type: 3}
+  sheepSpawnEffect: {fileID: 2763234815951177948, guid: 4fa057f96400fcb44b5ba5d767d63578,
+    type: 3}
+  despawnEffect: {fileID: 4641312858147274283, guid: 38f7560ff40fe854d9b0e89595929e50,
+    type: 3}
+  respawnEffect: {fileID: 4641312858147274283, guid: 38f7560ff40fe854d9b0e89595929e50,
+    type: 3}
+  disabledUIElementsColor: {r: 0.25882354, g: 0.43529412, b: 0.5568628, a: 1}
+  sheepPrefab: {fileID: 7238711003051132089, guid: 0589af828f0052d438c17f3055452bfd,
+    type: 3}
+  quadMesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  objectOutlineMaterial: {fileID: 2100000, guid: 8ee491e26ac8cbe479568c76134d3cf0,
+    type: 2}
+  objectSpeedToBecomeThreat: 0.5
+  distanceFromCamera: 20
+  positionChangeToMove: 12
+  followSpeed: 2
+  firstMoveSpeed: 10
+  destructibleHitDuration: 0.1
+  destructibleHitFrequency: 50
+  destructibleHitAmplitude: 0.1

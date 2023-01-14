@@ -1,0 +1,26 @@
+using NBG.Core;
+using UnityEngine;
+
+namespace Experimental
+{
+    /// <summary>
+    /// TODO: please fill out
+    /// </summary>
+    public class #SCRIPTNAME# : MonoBehaviour, IManagedBehaviour
+    {
+        void IManagedBehaviour.OnLevelLoaded()
+        {
+            #NOTRIM#
+        }
+
+        void IManagedBehaviour.OnAfterLevelLoaded()
+        {
+            #NOTRIM#
+        }
+
+        void IManagedBehaviour.OnLevelUnloaded()
+        {
+            #NOTRIM#
+        }
+    }
+}

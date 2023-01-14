@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" nbg="NBG.LogicGraph.EditorUI" editor-extension-mode="True">
+    <Style src="/Packages/com.nobrakesgames.logicgraph.editorui/Editor/NBG.LogicGraph.EditorUI/USS/LogicGraph.uss" />
+    <ui:VisualElement name="toastContainer" class="toast-container" style="max-width: 400px; min-width: 400px;">
+        <ui:VisualElement name="contentContainer" picking-mode="Ignore" style="flex-direction: row; justify-content: space-between; height: 95%; background-color: rgba(254, 255, 255, 0.69);">
+            <ui:VisualElement name="iconContainer" picking-mode="Ignore" style="align-items: center; justify-content: center; min-width: 30px;">
+                <ui:VisualElement name="icon" picking-mode="Ignore" style="min-width: 30px; min-height: 30px; max-height: 30px; max-width: 30px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="textContainer" style="flex-grow: 1; align-items: flex-start;">
+                <ui:TextElement text="Lorem ipsu" display-tooltip-when-elided="true" name="header" picking-mode="Ignore" style="-unity-text-align: upper-left; color: rgb(9, 9, 9); -unity-font-style: bold;" />
+                <ui:TextElement text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum enim sit amet est posuere tincidunt in ut turpis. " display-tooltip-when-elided="true" name="message" picking-mode="Ignore" style="-unity-text-align: upper-left; color: rgb(9, 9, 9);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="closeButton" style="width: 15px; height: 15px;">
+                <ui:VisualElement name="closeIcon" style="flex-grow: 1; -unity-background-image-tint-color: rgba(103, 103, 103, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="accentBar" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

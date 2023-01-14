@@ -1,0 +1,38 @@
+.category {
+    align-self: flex-start;
+    position: absolute;
+    margin: 3px;
+    padding: 3px;
+    text-shadow: 1px 1px 0 rgb(0, 0, 0);
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.21);
+    margin-top: 0;
+    border-bottom-right-radius: 10px;
+}
+
+.title-bar {
+    background-color: rgba(0, 0, 0, 0.21);
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin: 2px;
+    padding: 2px;
+    max-height: 36px;
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+.log {
+    -unity-text-align: lower-right;
+    bottom: 0;
+    position: relative;
+    left: auto;
+    top: auto;
+    right: 0;
+    font-size: 18px;
+    overflow: hidden;
+    max-height: 90%;
+}

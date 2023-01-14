@@ -1,0 +1,811 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba44486806e2c54fa7cf6b5a9484de0, type: 3}
+  m_Name: Microchip-Reach
+  m_EditorClassIdentifier: 
+  fallback: {fileID: 11400000, guid: 4a00af0f49aaffb489134f22a276ac8e, type: 2}
+  tracks:
+  - name: torso.cg.x
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: torso.cg.y
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.34
+    - time: 25
+      easeType: 2
+      value: 0.33
+    - time: 50
+      easeType: 2
+      value: 0.24
+  - name: torso.cg.z
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: torso.hipsPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 20
+    - time: 25
+      easeType: 2
+      value: -10
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: torso.hipsYaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: torso.hipsRoll
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: torso.waistPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: -6
+    - time: 50
+      easeType: 2
+      value: 25
+  - name: torso.waistYaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: torso.waistRoll
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: torso.chestPitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: -20
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 60
+  - name: torso.chestYaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: torso.chestRoll
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: torso.suspensionTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: torso.angularTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: torso.tonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: head.pitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: -60
+    - time: 50
+      easeType: 2
+      value: 30
+  - name: head.yaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: head.roll
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: head.fkParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: head.tonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: handL.pitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: -85
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 75
+  - name: handL.yaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 8
+    - time: 25
+      easeType: 2
+      value: 8
+    - time: 50
+      easeType: 2
+      value: 8
+  - name: handL.bend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 10
+    - time: 25
+      easeType: 2
+      value: 20
+    - time: 50
+      easeType: 2
+      value: 10
+  - name: handL.elbowAngle
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 35
+    - time: 50
+      easeType: 2
+      value: 70
+  - name: handL.wristAngle
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: handL.fkParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: handL.ikPos.x
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.25
+    - time: 25
+      easeType: 4
+      value: 0.3
+    - time: 50
+      easeType: 2
+      value: 0.3
+  - name: handL.ikPos.y
+    frames:
+    - time: 0
+      easeType: 3
+      value: 1.65
+    - time: 25
+      easeType: 3
+      value: 0.96
+    - time: 50
+      easeType: 4
+      value: 0.151
+  - name: handL.ikPos.z
+    frames:
+    - time: 0
+      easeType: 4
+      value: 0.02
+    - time: 25
+      easeType: 4
+      value: 0.47
+    - time: 50
+      easeType: 3
+      value: 0.1
+  - name: handL.ikPosRelative.x
+    frames:
+    - time: 0
+      easeType: 2
+      value: 0.05
+    - time: 25
+      easeType: 4
+      value: 0.1
+    - time: 50
+      easeType: 2
+      value: 0.1
+  - name: handL.ikPosRelative.y
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.55
+    - time: 25
+      easeType: 3
+      value: -0.1
+    - time: 50
+      easeType: 4
+      value: -0.65
+  - name: handL.ikPosRelative.z
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.05
+    - time: 25
+      easeType: 4
+      value: 0.65
+    - time: 50
+      easeType: 3
+      value: 0.08
+  - name: handL.ikParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 0.5
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: handL.ikBlend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 0
+      value: 1
+    - time: 50
+      easeType: 0
+      value: 1
+  - name: handL.upperTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: handL.lowerTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: handL.ikDrive
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: handR.pitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: -85
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 75
+  - name: handR.yaw
+    frames:
+    - time: 0
+      easeType: 0
+      value: 8
+    - time: 25
+      easeType: 2
+      value: 8
+    - time: 50
+      easeType: 2
+      value: 8
+  - name: handR.bend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 10
+    - time: 25
+      easeType: 2
+      value: 20
+    - time: 50
+      easeType: 2
+      value: 10
+  - name: handR.elbowAngle
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 35
+    - time: 50
+      easeType: 2
+      value: 70
+  - name: handR.wristAngle
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: handR.fkParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: handR.ikPos.x
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.25
+    - time: 25
+      easeType: 4
+      value: 0.3
+    - time: 50
+      easeType: 2
+      value: 0.3
+  - name: handR.ikPos.y
+    frames:
+    - time: 0
+      easeType: 3
+      value: 1.65
+    - time: 25
+      easeType: 3
+      value: 0.96
+    - time: 50
+      easeType: 4
+      value: 0.251
+  - name: handR.ikPos.z
+    frames:
+    - time: 0
+      easeType: 4
+      value: 0.02
+    - time: 25
+      easeType: 4
+      value: 0.47
+    - time: 50
+      easeType: 3
+      value: 0.1
+  - name: handR.ikPosRelative.x
+    frames:
+    - time: 0
+      easeType: 2
+      value: 0.05
+    - time: 25
+      easeType: 4
+      value: 0.1
+    - time: 50
+      easeType: 2
+      value: 0.1
+  - name: handR.ikPosRelative.y
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.65
+    - time: 25
+      easeType: 3
+      value: 0.1
+    - time: 50
+      easeType: 4
+      value: -0.55
+  - name: handR.ikPosRelative.z
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.05
+    - time: 25
+      easeType: 4
+      value: 0.65
+    - time: 50
+      easeType: 3
+      value: 0.08
+  - name: handR.ikParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 0.5
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: handR.ikBlend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 0
+      value: 1
+    - time: 50
+      easeType: 0
+      value: 1
+  - name: handR.upperTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: handR.lowerTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: handR.ikDrive
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: legL.pitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: -13
+    - time: 25
+      easeType: 2
+      value: -2
+    - time: 50
+      easeType: 2
+      value: -45
+  - name: legL.stretch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: legL.bend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 5
+    - time: 50
+      easeType: 2
+      value: 45
+  - name: legL.twist
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: legL.fkParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.ikPos.x
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.2
+  - name: legL.ikPos.y
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.05
+  - name: legL.ikPos.z
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.ikPosRelative.x
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.ikPosRelative.y
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.ikPosRelative.z
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.ikParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legL.ikBlend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+  - name: legL.upperTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: legL.lowerTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: legL.ikDrive
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.pitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: -13
+    - time: 25
+      easeType: 2
+      value: -2
+    - time: 50
+      easeType: 2
+      value: -45
+  - name: legR.stretch
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: legR.bend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 5
+    - time: 50
+      easeType: 2
+      value: 45
+  - name: legR.twist
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+    - time: 25
+      easeType: 2
+      value: 0
+    - time: 50
+      easeType: 2
+      value: 0
+  - name: legR.fkParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.ikPos.x
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.2
+  - name: legR.ikPos.y
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0.05
+  - name: legR.ikPos.z
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.ikPosRelative.x
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.ikPosRelative.y
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.ikPosRelative.z
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.ikParent
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: legR.ikBlend
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+  - name: legR.upperTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: legR.lowerTonus
+    frames:
+    - time: 0
+      easeType: 0
+      value: 1
+    - time: 25
+      easeType: 2
+      value: 1
+    - time: 50
+      easeType: 2
+      value: 1
+  - name: legR.ikDrive
+    frames:
+    - time: 0
+      easeType: 0
+      value: 0
+  - name: pivot.pitch
+    frames:
+    - time: 0
+      easeType: 0
+      value: -45
+    - time: 50
+      easeType: 2
+      value: 45
+  looped: 0
+  frameLength: 50
+  playbackSpeed: 1

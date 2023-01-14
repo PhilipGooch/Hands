@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" nbg="NBG.LogicGraph.EditorUI" editor-extension-mode="True" style="flex-direction: row;">
+    <Style src="/Packages/com.nobrakesgames.logicgraph.editorui/Editor/NBG.LogicGraph.EditorUI/USS/LogicGraph.uss" />
+    <ui:VisualElement name="contentContainer" style="flex-direction: row;">
+        <ui:VisualElement name="icon" />
+        <ui:Label text="Label" display-tooltip-when-elided="true" name="name" />
+    </ui:VisualElement>
+    <ui:VisualElement name="selectionIndicator" style="position: absolute; min-height: 100%;" />
+</ui:UXML>
