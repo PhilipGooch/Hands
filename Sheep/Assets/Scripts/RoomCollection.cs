@@ -8,7 +8,7 @@ public class RoomCollection : MonoBehaviour
     public static bool? beginAtStart;
     public Transform startingPuzzle;
     public static RoomCollection instance;
-    SheepManager sheepManager;
+    //SheepManager sheepManager;
     Transform[] rooms;
     int currentPuzzle = 0;
     private void OnEnable()
@@ -41,29 +41,29 @@ public class RoomCollection : MonoBehaviour
 
     public bool NextPuzzle()
     {
-        if (currentPuzzle == rooms.Length - 1) return false;
-        var vr = FindObjectOfType<VRLocomotion>();
-        var oldStart = rooms[currentPuzzle].GetComponentInChildren<SheepManager>().transform.position;
-        rooms[currentPuzzle].gameObject.SetActive(false);
-        currentPuzzle = (currentPuzzle + 1) % rooms.Length;
-        rooms[currentPuzzle].gameObject.SetActive(true);
-
-        var newStart = rooms[currentPuzzle].GetComponentInChildren<SheepManager>().transform.position;
-        vr.transform.position += (newStart - oldStart).ZeroY();
+        //if (currentPuzzle == rooms.Length - 1) return false;
+        //var vr = FindObjectOfType<VRLocomotion>();
+        //var oldStart = rooms[currentPuzzle].GetComponentInChildren<SheepManager>().transform.position;
+        //rooms[currentPuzzle].gameObject.SetActive(false);
+        //currentPuzzle = (currentPuzzle + 1) % rooms.Length;
+        //rooms[currentPuzzle].gameObject.SetActive(true);
+        //
+        //var newStart = rooms[currentPuzzle].GetComponentInChildren<SheepManager>().transform.position;
+        //vr.transform.position += (newStart - oldStart).ZeroY();
         //vr.transform.position = rooms[currentPuzzle].transform.position.SetY(vr.transform.position.y);
         return true;
     }
 
     public bool PreviousPuzzle()
     {
-        if (currentPuzzle == 0) return false;
-        var vr = FindObjectOfType<VRLocomotion>();
-        var oldStart = rooms[currentPuzzle].GetComponentInChildren<SheepManager>().transform.position;
-        rooms[currentPuzzle].gameObject.SetActive(false);
-        currentPuzzle = (currentPuzzle + rooms.Length-1) % rooms.Length;
-        rooms[currentPuzzle].gameObject.SetActive(true);
-        var newStart = rooms[currentPuzzle].GetComponentInChildren<SheepManager>().transform.position;
-        vr.transform.position += (newStart - oldStart).ZeroY();
+        //if (currentPuzzle == 0) return false;
+        //var vr = FindObjectOfType<VRLocomotion>();
+        //var oldStart = rooms[currentPuzzle].GetComponentInChildren<SheepManager>().transform.position;
+        //rooms[currentPuzzle].gameObject.SetActive(false);
+        //currentPuzzle = (currentPuzzle + rooms.Length-1) % rooms.Length;
+        //rooms[currentPuzzle].gameObject.SetActive(true);
+        //var newStart = rooms[currentPuzzle].GetComponentInChildren<SheepManager>().transform.position;
+        //vr.transform.position += (newStart - oldStart).ZeroY();
         //vr.transform.position = rooms[currentPuzzle].transform.position.SetY(vr.transform.position.y);
         //return currentPuzzle != rooms.Length - 1;
         return true;

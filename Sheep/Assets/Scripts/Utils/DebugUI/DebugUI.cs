@@ -72,13 +72,13 @@ public class DebugUI : MonoBehaviour
             {
                 _debugUI.Show();
                 player.SetControllerMovementEnabled(true);
-                UICamera.Instance.AddActiveUIElement();
+                //UICamera.Instance.AddActiveUIElement();
             }
             else
             {
                 _debugUI.Hide();
                 player.SetControllerMovementEnabled(false);
-                UICamera.Instance.RemoveActiveUIElement();
+                //UICamera.Instance.RemoveActiveUIElement();
 
             }
         }

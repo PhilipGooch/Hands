@@ -19,8 +19,8 @@ namespace VR.System
         float animationSpeed = 0.1f;
         [SerializeField]
         float scaleDuration = 0.25f;
-        [SerializeField]
-        SingleShotParticleEffect poofEffect;
+        //[SerializeField]
+        //SingleShotParticleEffect poofEffect;
         [SerializeField]
         Hand targetHand;
         [SerializeField]
@@ -67,13 +67,13 @@ namespace VR.System
 
             public void Update(Animator animator, VRSystem system, Hand hand, HandDirection direction, float speed)
             {
-                bool inUI = PlayerUIManager.Instance.InteractingWithUI;
+                //bool inUI = PlayerUIManager.Instance.InteractingWithUI;
                 float targetCurl = 0f;
-                if (inUI)
-                {
-                    targetCurl = PointFinger();
-                }
-                else
+                //if (inUI)
+                //{
+                //    targetCurl = PointFinger();
+                //}
+                //else
                 {
                     targetCurl = system.GetFingerCurl(direction, finger);
                     bool isPointing = IsPointing(system, direction, hand);
@@ -120,12 +120,12 @@ namespace VR.System
         // Update is called once per frame
         void Update()
         {
-            if (targetHand.IsThreat)
-            {
-                SwitchHandState(HandState.Puppet);
-                puppetAnimator.SetFloat(threatId, targetHand.Trigger);
-            }
-            else
+            //if (targetHand.IsThreat)
+            //{
+            //    SwitchHandState(HandState.Puppet);
+            //    puppetAnimator.SetFloat(threatId, targetHand.Trigger);
+            //}
+            //else
             {
                 SwitchHandState(HandState.Hand);
                 foreach (var finger in allFingers)
@@ -183,7 +183,7 @@ namespace VR.System
                 targetHandState = state;
                 handAnimator.gameObject.SetActive(true);
                 puppetAnimator.gameObject.SetActive(true);
-                poofEffect?.Create(transform.position, transform.rotation);
+                //poofEffect?.Create(transform.position, transform.rotation);
             }
 
             var targetTransform = state == HandState.Hand ? handAnimator.transform : puppetAnimator.transform;

@@ -18,10 +18,10 @@ public class SheepGameManager : SingletonBehaviour<SheepGameManager>
     Player player;
     [SerializeField]
     VRSystem vrSystem;
-    [SerializeField]
-    LevelManager levelManager;
-    [SerializeField]
-    PlayerUIManager playerUIManager;
+    //[SerializeField]
+    //LevelManager levelManager;
+    //[SerializeField]
+    //PlayerUIManager playerUIManager;
 
     List<GameObject> tempObjectList = new List<GameObject>();
 
@@ -33,8 +33,8 @@ public class SheepGameManager : SingletonBehaviour<SheepGameManager>
         {
             vrSystem.Initialize();
             player.Initialize();
-            levelManager.Initialize();
-            playerUIManager.Initialize();
+            //levelManager.Initialize();
+            //playerUIManager.Initialize();
 
             ManagedWorld.Create(16);
             EntityStore.Create(10, 500);
@@ -45,10 +45,10 @@ public class SheepGameManager : SingletonBehaviour<SheepGameManager>
 
             dataManager = DataManager.EnsureInitialized();
 
-            LevelManager.onSceneUnloaded += OnSceneUnload;
-            LevelManager.onSceneLoaded += OnSceneLoad;
+            //LevelManager.onSceneUnloaded += OnSceneUnload;
+            //LevelManager.onSceneLoaded += OnSceneLoad;
 
-            Threat.Initialize();
+            //Threat.Initialize();
 
             GameSystemWorldDefault.DebugPrint("boot");
 
@@ -89,10 +89,10 @@ public class SheepGameManager : SingletonBehaviour<SheepGameManager>
             // Must Unload all managed behaviours in order to correctly dispose of things like ropes.
             BootManagedBehaviours.RunUnloadAll();
             RigidbodyRegistration.UnregisterAll();
-            Threat.Dispose();
-            SheepScareIterative.Dispose();
-            LevelManager.onSceneUnloaded -= OnSceneUnload;
-            LevelManager.onSceneLoaded -= OnSceneLoad;
+            //Threat.Dispose();
+            //SheepScareIterative.Dispose();
+            //LevelManager.onSceneUnloaded -= OnSceneUnload;
+            //LevelManager.onSceneLoaded -= OnSceneLoad;
             RigidbodyRegistration.UnregisterAll();
             RecoilSystems.Shutdown();
             GameSystemWorldDefault.Destroy();

@@ -49,7 +49,7 @@ public class DataManager
                 Debug.LogWarning($"Error recieved while loading save file. Error message: {status.msg}");
                 break;
             case SerializationStatus.CriticalError:
-                PlayerUIManager.Instance.DisplayNotification("Data load error", "<color=#f00000>status.msg</color>\nThe game will exit.", "Ok", Application.Quit);
+                //PlayerUIManager.Instance.DisplayNotification("Data load error", "<color=#f00000>status.msg</color>\nThe game will exit.", "Ok", Application.Quit);
                 Debug.LogWarning($"CRITICAL Error recieved while loading save file. Error message: {status.msg}");
                 break;
 
@@ -66,7 +66,7 @@ public class DataManager
                 Debug.LogWarning($"Error recieved while loading save file. Error message: {status.msg}");
                 break;
             case SerializationStatus.CriticalError:
-                PlayerUIManager.Instance.DisplayNotification("Data save error", "<color=#f00000>status.msg</color>\nThe game will exit.", "Ok", Application.Quit);
+                //PlayerUIManager.Instance.DisplayNotification("Data save error", "<color=#f00000>status.msg</color>\nThe game will exit.", "Ok", Application.Quit);
                 Debug.LogWarning($"CRITICAL Error recieved while loading save file. Error message: {status.msg}");
                 break;
 
@@ -75,37 +75,38 @@ public class DataManager
 
     public float GetCampaignCompletion()
     {
-        float completion = 0;
-        int count = 0;
-
-        foreach (var chapter in LevelManager.Instance.GetAllChapters())
-        {
-            completion += GetChapterCompletion(chapter);
-            count++;
-        }
-        return completion / count;
+        //float completion = 0;
+        //int count = 0;
+        //
+        //foreach (var chapter in LevelManager.Instance.GetAllChapters())
+        //{
+        //    completion += GetChapterCompletion(chapter);
+        //    count++;
+        //}
+        //return completion / count;
+        return 1;
     }
     //since only completed levels are saved its impossible to get completion just from the save data
-    public float GetChapterCompletion(Chapter chapter)
-    {
-        int completed = 0;
-        int notComepleted = 0;
+    //public float GetChapterCompletion(Chapter chapter)
+    //{
+    //    int completed = 0;
+    //    int notComepleted = 0;
 
-        var chapterData = saveData.GetChapterDataById(chapter.id);
-        if (chapterData != null)
-        {
-            foreach (var level in chapter.levels)
-            {
-                var lvlData = chapterData.GetLevelDataById(level.id);
-                if (lvlData != null && lvlData.completed)
-                    completed++;
-                else
-                    notComepleted++;
-            }
-        }
-        else
-            notComepleted += chapter.levels.Count;
+    //    var chapterData = saveData.GetChapterDataById(chapter.id);
+    //    if (chapterData != null)
+    //    {
+    //        foreach (var level in chapter.levels)
+    //        {
+    //            var lvlData = chapterData.GetLevelDataById(level.id);
+    //            if (lvlData != null && lvlData.completed)
+    //                completed++;
+    //            else
+    //                notComepleted++;
+    //        }
+    //    }
+    //    else
+    //        notComepleted += chapter.levels.Count;
 
-        return (float)completed / (float)(completed + notComepleted);
-    }
+    //    return (float)completed / (float)(completed + notComepleted);
+    //}
 }

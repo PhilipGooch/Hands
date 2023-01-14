@@ -18,7 +18,7 @@ public class Hand : MonoBehaviour
     public float Grab => VRSystem.Instance.GetGrabAmount(handDirection);
     public Vector2 MoveDir => VRSystem.Instance.ReadMoveInput(handDirection);
 
-    public bool IsThreat => attachedBody == null && Trigger > 0 && !PlayerUIManager.Instance.InteractingWithUI;
+    //public bool IsThreat => attachedBody == null && Trigger > 0 && !PlayerUIManager.Instance.InteractingWithUI;
 
     public HandPositions HandPositions => handPositions;
 
@@ -57,14 +57,14 @@ public class Hand : MonoBehaviour
 
     private void Start()
     {
-        PlayerUIManager.Instance.onUIInteractionStarted += OnUIVisible;
-        PlayerUIManager.Instance.onUIInteractionEnded += OnUIHidden;
+        //PlayerUIManager.Instance.onUIInteractionStarted += OnUIVisible;
+        //PlayerUIManager.Instance.onUIInteractionEnded += OnUIHidden;
     }
 
     private void OnDestroy()
     {
-        PlayerUIManager.Instance.onUIInteractionStarted -= OnUIVisible;
-        PlayerUIManager.Instance.onUIInteractionEnded -= OnUIHidden;
+        //PlayerUIManager.Instance.onUIInteractionStarted -= OnUIVisible;
+        //PlayerUIManager.Instance.onUIInteractionEnded -= OnUIHidden;
     }
 
     public bool GetInput(HandInputType inputType)
@@ -161,18 +161,18 @@ public class Hand : MonoBehaviour
 
         if (attachedBody != null) // anchor reprojection - to avoid forces in certain directions
         {
-            var project = attachedBody.GetComponent<IProjectHandAnchor>();
-            if (project != null)
-            {
-                //vrRot = attachedBody.rotation * Quaternion.Inverse(anchorRot);
-                //vrPos = attachedBody.TransformPoint(attachedAnchorPos) - attachedBody.rotation * Quaternion.Inverse(anchorRot)* anchorPos;
-                var p = vrRot * anchorPos + vrPos;
-                var r = (vrRot * anchorRot).normalized;
-
-                project.Project(ref p, ref r, ref vrVelocity, ref vrAngularVelocity, attachedAnchorPos, anchorRot);
-                vrRot = (r * Quaternion.Inverse(anchorRot)).normalized;
-                vrPos = p - vrRot * anchorPos;
-            }
+            //var project = attachedBody.GetComponent<IProjectHandAnchor>();
+            //if (project != null)
+            //{
+            //    //vrRot = attachedBody.rotation * Quaternion.Inverse(anchorRot);
+            //    //vrPos = attachedBody.TransformPoint(attachedAnchorPos) - attachedBody.rotation * Quaternion.Inverse(anchorRot)* anchorPos;
+            //    var p = vrRot * anchorPos + vrPos;
+            //    var r = (vrRot * anchorRot).normalized;
+            //
+            //    project.Project(ref p, ref r, ref vrVelocity, ref vrAngularVelocity, attachedAnchorPos, anchorRot);
+            //    vrRot = (r * Quaternion.Inverse(anchorRot)).normalized;
+            //    vrPos = p - vrRot * anchorPos;
+            //}
 
             var constraint = attachedBody.GetComponent<IConstraint>();
             if (constraint != null)
@@ -233,7 +233,7 @@ public class Hand : MonoBehaviour
     {
         var grabPos = pos;
         var nearestCollider = FindNearest(collidersInRange, ref grabPos);
-        handVisuals.UpdateOutline(nearestCollider, attachedBody, IsThreat);
+        handVisuals.UpdateOutline(nearestCollider, attachedBody, false);
     }
 
     bool GrabIsPossible()
@@ -358,19 +358,19 @@ public class Hand : MonoBehaviour
 
         onAttachObject?.Invoke(attachedBody);
 
-        var sheep = attachedBody.GetComponentInParent<Sheep>();
-        var isSheep = sheep != null;
+        //var sheep = attachedBody.GetComponentInParent<Sheep>();
+        //var isSheep = sheep != null;
 
-        if (isSheep)
-        {
-            grabParams = GrabParams.sheepParams;
-            grabPos = attachedReBody.position;
-            var audio = sheep.GetComponentInChildren<SheepAudio>();
-            if (audio)
-                audio.PlayVoice(1.5f);
-        }
-        if (otherHand.attachedBody != attachedBody && !isSheep)
-            attachedReBody.mass *= grabParams.massMultiplier;
+        //if (isSheep)
+        //{
+        //    grabParams = GrabParams.sheepParams;
+        //    grabPos = attachedReBody.position;
+        //    var audio = sheep.GetComponentInChildren<SheepAudio>();
+        //    if (audio)
+        //        audio.PlayVoice(1.5f);
+        //}
+        //if (otherHand.attachedBody != attachedBody && !isSheep)
+        //    attachedReBody.mass *= grabParams.massMultiplier;
 
         var grabOverride = attachedBody.GetComponent<IOverrideGrabAnchor>();
         if (grabOverride != null)
@@ -397,9 +397,9 @@ public class Hand : MonoBehaviour
 
     void DetachObject()
     {
-        var isSheep = attachedBody.GetComponentInParent<Sheep>() != null;
-        if (otherHand.attachedBody != attachedBody && !isSheep)
-            attachedReBody.mass /= grabParams.massMultiplier;
+        //var isSheep = attachedBody.GetComponentInParent<Sheep>() != null;
+        //if (otherHand.attachedBody != attachedBody && !isSheep)
+        //    attachedReBody.mass /= grabParams.massMultiplier;
 
         //reset grabbed trigger preasure;
         var triggerHandler = attachedBody != null ? attachedBody.GetComponent<ITriggerHandler>() : null;

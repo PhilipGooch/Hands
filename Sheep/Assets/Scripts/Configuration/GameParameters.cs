@@ -18,19 +18,19 @@ public class GameParameters : ScriptableObject
         }
     }
 
-    [Header("Particles")]
-    public MeshParticleEffect meshFireParticles;
-    [Tooltip("Does not require mesh to work, simply follows the assigned object")]
-    public ContinuousParticleEffect continuousFireParticles;
-    public SingleShotParticleEffect waterParticles;
-    public SingleShotParticleEffect sheepSpawnEffect;
-    public SingleShotParticleEffect despawnEffect;
-    public SingleShotParticleEffect respawnEffect;
+    //[Header("Particles")]
+    //public MeshParticleEffect meshFireParticles;
+    //[Tooltip("Does not require mesh to work, simply follows the assigned object")]
+    //public ContinuousParticleEffect continuousFireParticles;
+    //public SingleShotParticleEffect waterParticles;
+    //public SingleShotParticleEffect sheepSpawnEffect;
+    //public SingleShotParticleEffect despawnEffect;
+    //public SingleShotParticleEffect respawnEffect;
 
     [Header("Others")]
     public Color disabledUIElementsColor = new Color32(66, 111, 142, 255);
 
-    public Sheep sheepPrefab;
+    //public Sheep sheepPrefab;
     public Mesh quadMesh;
     public Material objectOutlineMaterial;
 

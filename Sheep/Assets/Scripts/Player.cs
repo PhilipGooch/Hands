@@ -7,8 +7,8 @@ using VR.System;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField]
-    public PlayerUIManager playerUIManager;
+    //[SerializeField]
+    //public PlayerUIManager playerUIManager;
 
     public Move move;
     public VRLocomotion vrLoco;
@@ -223,20 +223,20 @@ public class Player : MonoBehaviour
         //if (rightHand.GetInput(HandInputType.aButtonDown)) { Restart(); StartCoroutine(LevelManager.LoadNextLevel()); }
         //if (rightHand.GetInput(HandInputType.bButtonDown)) { Restart(); StartCoroutine(LevelManager.LoadPreviousLevel()); }
         
-        if (leftHand.GetInput(HandInputType.bButtonDown) || rightHand.GetInput(HandInputType.bButtonDown))
-        {
-            if (!LevelManager.Instance.InMainMenu())
-            {
-                if (LevelFinish.levelWon == false)
-                {
-                    if (!PlayerUIManager.Instance)
-                    {
-                        Instantiate(playerUIManager);
-                    }
-                    PlayerUIManager.Instance.ShowPanel(MenuState.PAUSE);
-                }
-            }
-        }
+        //if (leftHand.GetInput(HandInputType.bButtonDown) || rightHand.GetInput(HandInputType.bButtonDown))
+        //{
+        //    if (!LevelManager.Instance.InMainMenu())
+        //    {
+        //        if (LevelFinish.levelWon == false)
+        //        {
+        //            if (!PlayerUIManager.Instance)
+        //            {
+        //                Instantiate(playerUIManager);
+        //            }
+        //            PlayerUIManager.Instance.ShowPanel(MenuState.PAUSE);
+        //        }
+        //    }
+        //}
 #if DEBUG_CONTROLS
         if (Input.GetKeyDown(KeyCode.B))
         {
