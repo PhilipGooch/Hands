@@ -1,8 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
-    <Style src="../USS/NoodleAnimatorWindow.uss" />
-    <Noodles.Animation.Editor.UI.ToolbarView name="toolbar" />
-    <ui:VisualElement name="elementsRoot" class="elements-root">
-        <Noodles.Animation.Editor.UI.InspectorView name="inspectorView" />
-        <Noodles.Animation.Editor.UI.TimelineView name="timelineView" />
-    </ui:VisualElement>
-</ui:UXML>

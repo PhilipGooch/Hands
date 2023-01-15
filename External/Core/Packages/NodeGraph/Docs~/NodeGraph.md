@@ -1,3 +1,0 @@
-NodeGraph
-
-TODO: README
