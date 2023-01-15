@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Node = UnityEngine.XR.XRNode;
 
@@ -44,7 +42,6 @@ namespace VR.System
         // Oculus runs at 72fps
         public float FixedDeltaTime => 1f / 72f;
         const int velocityFrameCount = 12;
-
 
         public event Action HeadsetTrackingStarted;
         public event Action ModelLoaded;

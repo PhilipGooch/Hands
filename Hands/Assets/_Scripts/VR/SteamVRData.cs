@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 #if STEAMVR || UNITY_EDITOR
 using Valve.VR;
@@ -26,7 +24,6 @@ namespace VR.System
         [SerializeField]
         Collider rightControllerBounds;
 
-
         public SteamVR_Action_Boolean triggerAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("Trigger");
         public SteamVR_Action_Single triggerAnalogAction = SteamVR_Input.GetAction<SteamVR_Action_Single>("TriggerAnalog");
         public SteamVR_Action_Boolean grabAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("Grip");
@@ -47,7 +44,6 @@ namespace VR.System
         public bool NeedsHeightCalibration => true;
  
         public float FixedDeltaTime => 1f / 72f;
-
 
         public event Action HeadsetTrackingStarted;
         public event Action ModelLoaded;

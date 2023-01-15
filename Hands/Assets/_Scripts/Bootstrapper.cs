@@ -17,5 +17,6 @@ public class Bootstrapper : MonoBehaviour
         player.Initialize();
         transform.parent = null;
         DontDestroyOnLoad(this);
+        vrSystem.Vibrate(2, 3, 999, 999, HandDirection.Right);
     }
 }
