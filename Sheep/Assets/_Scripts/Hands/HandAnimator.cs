@@ -10,8 +10,8 @@ namespace VR.System
         VRSystem vrSystem;
         [SerializeField]
         Animator handAnimator;
-        [SerializeField]
-        Animator puppetAnimator;
+        //[SerializeField]
+        //Animator puppetAnimator;
         [SerializeField]
         HandDirection direction;
         [SerializeField]
@@ -182,20 +182,20 @@ namespace VR.System
                 stateSwitchProgress = 1f - stateSwitchProgress;
                 targetHandState = state;
                 handAnimator.gameObject.SetActive(true);
-                puppetAnimator.gameObject.SetActive(true);
+                //puppetAnimator.gameObject.SetActive(true);
                 //poofEffect?.Create(transform.position, transform.rotation);
             }
 
-            var targetTransform = state == HandState.Hand ? handAnimator.transform : puppetAnimator.transform;
-            var otherTransform = state == HandState.Hand ? puppetAnimator.transform : handAnimator.transform;
+            //var targetTransform = state == HandState.Hand ? handAnimator.transform : puppetAnimator.transform;
+            //var otherTransform = state == HandState.Hand ? puppetAnimator.transform : handAnimator.transform;
+            //
+            //targetTransform.localScale = Vector3.one * stateSwitchProgress;
+            //otherTransform.localScale = Vector3.one * (1f - stateSwitchProgress);
 
-            targetTransform.localScale = Vector3.one * stateSwitchProgress;
-            otherTransform.localScale = Vector3.one * (1f - stateSwitchProgress);
-
-            if (stateSwitchProgress == 1f)
-            {
-                otherTransform.gameObject.SetActive(false);
-            }
+            //if (stateSwitchProgress == 1f)
+            //{
+            //    otherTransform.gameObject.SetActive(false);
+            //}
         }
 
         void UpdateColor()
@@ -210,7 +210,7 @@ namespace VR.System
             stateSwitchProgress = 1f;
             targetHandState = HandState.Hand;
             handAnimator.gameObject.SetActive(visible);
-            puppetAnimator.gameObject.SetActive(visible);
+            //puppetAnimator.gameObject.SetActive(visible);
         }
 
         private void OnValidate()
