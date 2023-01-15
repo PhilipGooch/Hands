@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public static class SheepVectorExtensions 
+public static class Vector3Extensions 
 {
     public static bool IsFinite(this Vector3 v)
     {
