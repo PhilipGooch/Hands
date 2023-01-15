@@ -20,10 +20,6 @@ public class SimpleHaptics// : IGrabNotifications
         if (activeHand != null)
         {
             VibrateHand(activeHand);
-            if (activeHand.HoldingObjectWithTwoHands)
-            {
-                VibrateHand(activeHand.otherHand);
-            }
         }
     }
 

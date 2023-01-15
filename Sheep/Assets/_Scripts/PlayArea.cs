@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using VR.System;
 
@@ -10,6 +9,7 @@ public class PlayArea : MonoBehaviour
     public Vector3 size = new Vector3(36, 20, 27);
     [SerializeField]
     bool movePlayerToCenter = false;
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.matrix = transform.localToWorldMatrix;
