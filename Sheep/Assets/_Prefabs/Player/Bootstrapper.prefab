@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6900109162550113740}
   - component: {fileID: -3221045229541996653}
-  - component: {fileID: 397164482}
   - component: {fileID: 4723063192926722041}
   m_Layer: 0
   m_Name: Bootstrapper
@@ -29,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -47,28 +47,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   vrSystem: {fileID: 4723063192926722041}
-  levelManager: {fileID: 0}
-  playerUIManager: {fileID: 0}
---- !u!114 &397164482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4524755679470316729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e0eea9df29cea3418c6376c2fc420b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lastLevel:
-    name: 
-    scene:
-      m_SceneAsset: {fileID: 0}
-      m_SceneName: 
-    selectionPrefab: {fileID: 0}
-    id: 
-  lastChapterId: -1
 --- !u!114 &4723063192926722041
 MonoBehaviour:
   m_ObjectHideFlags: 0
