@@ -107,8 +107,7 @@ namespace VR.System
 
         static bool IsPointing(VRSystem vrSystem, HandDirection direction, Hand hand)
         {
-            
-            return vrSystem.GetFingerCurl(direction, Finger.Index) < 0.2f;
+            return vrSystem.GetFingerCurl(direction, Finger.Index) < 0.2f && IsGrabbing(hand);
         }
 
         static bool IsGrabbing(Hand targetHand)
@@ -116,10 +115,6 @@ namespace VR.System
             return targetHand.Grab > 0f;
         }
 
-        public bool IsEmptyFist()
-        {
-            return targetHand.Grab > grabAmountForFist;
-        }
 
         void UpdateHandConnection(HandDirection handDir, bool connected)
         {
