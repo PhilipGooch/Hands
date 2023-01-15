@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2313554375173459010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159832512085965757}
+  - component: {fileID: 7070298394782741196}
+  m_Layer: 12
+  m_Name: HandTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1159832512085965757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2313554375173459010}
+  m_LocalRotation: {x: 0.09071945, y: 0, z: 0, w: 0.9958765}
+  m_LocalPosition: {x: -0.295, y: -0.916, z: 0.223}
+  m_LocalScale: {x: 0.75, y: 1.5, z: 1.83}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2086736704839261169}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 10.41, y: 0, z: 0}
+--- !u!65 &7070298394782741196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2313554375173459010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3739911732133003800
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,6 +77,7 @@ Transform:
   m_Children:
   - {fileID: 4552899639433539929}
   - {fileID: 4076640491783839919}
+  - {fileID: 1159832512085965757}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49,6 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vrSystem: {fileID: 0}
   handAnimator: {fileID: 5034356183697991210}
+  puppetAnimator: {fileID: 0}
   direction: 1
   animationSpeed: 0.25
   scaleDuration: 0.1
@@ -67,7 +114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42c36fadc598284d816fa98f2bfc7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  threatTransform: {fileID: 0}
   pointingTransform: {fileID: 4076640491783839919}
+  indexCollider: {fileID: 5642759847545702778}
+  fistCollider: {fileID: 69247234414480350}
+  handCollider: {fileID: 7070298394782741196}
 --- !u!1 &5153950533707264401
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +409,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f910c53657db7442b1cbf90861f6d6e, type: 3}
+--- !u!135 &69247234414480350 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 4133649998509050236, guid: 2f910c53657db7442b1cbf90861f6d6e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4155607752910635682}
+  m_PrefabAsset: {fileID: 0}
 --- !u!137 &2178128424577252553 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2851318943690440299, guid: 2f910c53657db7442b1cbf90861f6d6e,
@@ -373,6 +430,12 @@ Transform:
 --- !u!95 &5034356183697991210 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8968372738574328968, guid: 2f910c53657db7442b1cbf90861f6d6e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4155607752910635682}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &5642759847545702778 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 8639226886567070680, guid: 2f910c53657db7442b1cbf90861f6d6e,
     type: 3}
   m_PrefabInstance: {fileID: 4155607752910635682}
   m_PrefabAsset: {fileID: 0}
