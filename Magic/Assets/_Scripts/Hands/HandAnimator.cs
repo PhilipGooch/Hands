@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace VR.System
@@ -32,8 +30,6 @@ namespace VR.System
         int alphaMultiplierId = Shader.PropertyToID("_AlphaMultiplier");
 
         MaterialPropertyBlock propertyBlock;
-
-        const float grabAmountForFist = 0.8f;
 
         AnimatedFinger[] allFingers;
 
